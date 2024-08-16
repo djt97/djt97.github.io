@@ -1,34 +1,27 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"campbell":
+  - firstname: ["Arthur", "A."]
+    url: https://sites.google.com/site/arthurcampbellecon/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"zenou":
+  - firstname: ["Yves", "Y."]
+    url: https://sites.google.com/site/yvesbzenou/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"holden":
+  - firstname: ["Richard", "R."]
+    url: https://richardholden.org/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"akerlof":
+  - firstname: ["Robert", "R."]
+    url: https://robertakerlof.com/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"gratton":
+  - firstname: ["Gabriele", "G."]
+    url: https://gratton.org/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"langtry":
+  - firstname: ["Alastair", "A."]
+    url: https://www.alastairlangtry.com/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"teh":
+  - firstname: ["Chris", "Christopher", "C."]
+    url: https://sites.google.com/view/christopherteh/

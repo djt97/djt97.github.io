@@ -88,31 +88,40 @@ In publications, the author entry for yourself is identified by string array `sc
 
 ```yaml
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Thornton]
+  first_name: [DJ]
 ```
 
 If the entry matches one form of the last names and the first names, it will be underlined. Keep meta-information about your co-authors in [\_data/coauthors.yml](_data/coauthors.yml) and Jekyll will insert links to their webpages automatically. The co-author data format is as follows,
 
 ```yaml
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Holden":
+  - firstname: ["Richard", "R."]
+    url: https://richardholden.org/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Zenou":
+  - firstname: ["Yves", "Y."]
+    url: https://sites.google.com/site/yvesbzenou/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Campbell":
+  - firstname: ["Arthur", "A."]
+    url: https://sites.google.com/site/arthurcampbellecon/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Akerlof":
+  - firstname: ["Robert", "R."]
+    url: https://robertakerlof.com/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Langtry":
+  - firstname: ["Alastair", "A."]
+    url: https://www.alastairlangtry.com/
+
+"Gratton":
+   - firstname: ["Gabriele", "G."]
+    url: https://gratton.org/
+
+"Teh":
+   - firstname: ["Christopher", "Chris", "C."]
+    url: https://sites.google.com/view/christopherteh/
 ```
 
 If the entry matches one of the combinations of the last names and the first names, it will be highlighted and linked to the url provided.
