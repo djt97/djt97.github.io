@@ -9,4 +9,4 @@ giscus_comments: true
 # related_publications: true
 ---
 
-<object class="pdf-container" data="{% link assets/pdf/Bad_Networks_May_2024.pdf %}" type='application/pdf'></object>
+<object class="pdf-container" data="{{ site.baseurl }}/assets/pdf/Bad_Networks_May_2024.pdf" type='application/pdf'></object>
