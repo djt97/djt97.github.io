@@ -9,4 +9,6 @@ giscus_comments: true
 # related_publications: true
 ---
 
-<object class="pdf-container" data="{{ site.baseurl }}/assets/pdf/Bad_Networks_May_2024.pdf" type='application/pdf'></object>
+<div class="post">
+<object data="../assets/pdf/Bad_Networks_May_2024.pdf#pagemode=none" width="750" height="1000" type='application/pdf'></object>
+</div>
