@@ -16,13 +16,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a PhD candidate at the University of New South Wales. My advisors are [Richard Holden](https://richardholden.org/) and [Gabriele Gratton](https://gratton.org/). I study microeconomic theory applied to networks ([diffusion](projects/strategic_diffusion), [externalities]({{ site.baseurl }}/_projects/bad_networks)) and learning ([feedback loops](projects/learning_feedback)). I'm also interested in culture and narratives.
+I am a PhD candidate at the University of New South Wales. My advisors are [Richard Holden](https://richardholden.org/) and [Gabriele Gratton](https://gratton.org/). I study microeconomic theory applied to networks ([diffusion](projects/strategic_diffusion), [externalities]({% link _projects/strategic_diffusion.md %})) and learning ([feedback loops]({% link _projects/learning_feedback.md %})). I'm also interested in culture and narratives.
 
 I completed my undergraduate degrees in Pure Math (with Honours) and Commerce. My 2019 honours thesis was on the theory of the giant component and information cascades in random graphs.
 
 I was the youngest lecturer for the faculty of Economics at UNSW in 2020 when I began lecturing at age 23. I have an extensive teaching record and have lectured 12 courses and tutored 18 courses since 2018, spanning economic theory, economic history, applied microeconomics, and econometrics.
 
-Outside of academia, I love music, philosophy, coffee, and most importantly spending time with my family. My wife and I also run a [paediatric occupational therapy clinic](https://www.bloom-ps.com.au/). You can find some photos of my wonderful family [here.](projects/family_photos)
+Outside of academia, I love music, philosophy, coffee, and most importantly spending time with my family. My wife and I also run a [paediatric occupational therapy clinic](https://www.bloom-ps.com.au/). You can find some photos of my wonderful family [here.]({% link _projects/family_photos.md %})
 
 <!-- ![Landscape Long Image](family_photo_2.jpeg)-->
 
