@@ -14,7 +14,7 @@ images:
 ### Abstract
 I develop a model of learning in which information is subject to *feedback loops*. In my leading example, a "Large Language Model" (LLM) draws signals from a *database*, and updates its belief about a state of the world. The LLM chooses whether to make a recommendation to agents on how they should act, and these actions feed back into the next-period database. Because actions based on the LLM's recommendation are totally uninformative to the LLM, the quality of information deteriorates over time. LLM recommendations generate "synthetic data" which can improve short-term outcomes for agents (*agent learning*) but this always comes at the expense of data-pollution, which lowers the quality of recommendations (*LLM  learning*). An LLM which values the future quality of agents' decisions may prefer to slow down the frequency with which it makes recommendations. I discuss policies that lead to better outcomes ex-ante and consider the implications of my model for the future of generative AI.
 
-The paper is currently undergoing revisions but you can find slides for an earlier draft of the paper [here](assets/pdfs/learning_feedback_old_slides.pdf).
+The paper is currently undergoing revisions but you can find slides for an earlier draft of the paper [here](assets/pdf/learning_feedback_old_slides.pdf).
 
 {% comment %}
 , and a summary of the model below. {% cite CTZ2024 %}.

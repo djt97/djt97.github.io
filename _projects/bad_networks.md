@@ -8,12 +8,5 @@ category: "research (working papers)"
 giscus_comments: true
 # related_publications: true
 ---
-{% comment %}
-Coordination traps.
-
-There's a famous
-
-Burzstyn et al. find that... X% of young people on Tik Tok would prefer if it were switched off.
-{% endcomment %}
 
 <object class="pdf-container" data="{% link assets/pdf/Bad_Networks_May_2024.pdf %}" type='application/pdf'></object>
