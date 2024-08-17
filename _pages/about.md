@@ -6,7 +6,7 @@ subtitle: Economist. 27. Dad of 3. Trying to build something. # <a href='https:/
 
 profile:
   align: right
-  image: dj.webp
+  image: dj.png # had many issues with this...
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Sydney, Australia</p>
