@@ -8,7 +8,7 @@ middle_name:
 last_name: Thornton
 email: d.thornton@unsw.edu.au
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Economist. 27. Dad of 3. Trying to build something.
 footer_text: >
   Check out my <a href="/projects" target="_blank">research</a>!
 # or my <a href="/blog" target="_blank">blog</a>!
