@@ -8,6 +8,4 @@ category: "research (working papers)"
 giscus_comments: true
 ---
 
-<div class="post">
-<object data="{{ site.baseurl }}/assets/pdf/Strategic_Diffusion_August_2024.pdf#pagemode=none" width="750" height="1000" type='application/pdf'></object>
-</div>
+[Link to paper]({% link assets/pdf/Strategic_Diffusion_August_2024.pdf %})
