@@ -9,4 +9,6 @@ giscus_comments: true
 # related_publications: true
 ---
 
-[Link to paper]({% link assets/pdf/Bad_Networks_May_2024.pdf %})
+<div class="post">
+<object data="{{ site.baseurl }}/assets/pdf/Bad_Networks_May_2024.pdf#pagemode=none" width="750" height="1000" type='application/pdf'></object>
+</div>
