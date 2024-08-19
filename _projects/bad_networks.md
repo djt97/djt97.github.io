@@ -10,5 +10,5 @@ giscus_comments: true
 ---
 
 <div class="post">
-<object data="{% link assets/pdf/Bad_Networks_May_2024.pdf %}#pagemode=none" width="750" height="1000" type='application/pdf'></object>
+<object data="{{ site.baseurl }}/assets/pdf/Bad_Networks_May_2024.pdf#pagemode=none" width="750" height="1000" type='application/pdf'></object>
 </div>
