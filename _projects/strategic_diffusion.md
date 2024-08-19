@@ -8,4 +8,6 @@ category: "research (working papers)"
 giscus_comments: true
 ---
 
-Coming soon (currently there is an issue with pdf links)
+<div class="post">
+<object data="{% link assets/pdf/Strategic_Diffusion_August_2024.pdf %}#pagemode=none" width="750" height="1000" type='application/pdf'></object>
+</div>

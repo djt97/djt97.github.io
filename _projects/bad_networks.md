@@ -9,4 +9,6 @@ giscus_comments: true
 # related_publications: true
 ---
 
-Coming soon (currently there is an issue with pdf links)
+Coming soon (currently there is an issue with pdf embeddings)
+
+
