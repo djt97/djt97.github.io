@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New website is up!
-date: 2024-08-16 00:00:00+1000
+date: 2024-08-16 10:00:00+1000
 inline: false # true if you just want inline
 related_posts: false
 ---
