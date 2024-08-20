@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Learning with Feedback Loops
-description: What happens when LLMs learns from their own output?
+description: What happens when LLMs learn from their own output?
 img: assets/img/learning.png
 importance: 1
 category: "research (in progress)"
