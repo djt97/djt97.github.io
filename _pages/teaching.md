@@ -7,10 +7,8 @@ nav: true
 nav_order: 6
 ---
 
-I will be updating this in September with materials for my undergraduate Game Theory course, stay tuned!
+This term (Sep-Nov) I'm teaching ECON2112: Game Theory and Business Strategy. You can find the course outline [here](https://www.unsw.edu.au/course-outlines/course-outline#year=2024&term=Term%203&deliveryMode=In%20Person&deliveryFormat=Standard&teachingPeriod=T3&deliveryLocation=Kensington&courseCode=ECON2112&activityGroupId=1).
 
-{% comment %}
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+We follow the excellent textbook [Game Theory for Applied Economists](https://www.amazon.com/Theory-Applied-Economists-Robert-Gibbons/dp/0691043086) by Robert Gibbons (which apparently Amazon tells me I can buy used for only $595.00, WOW! But seriously, if you've already bought the book and are looking for a backup digital copy, I have found that it never hurts to do a quick Google search for the pdf). For a gentler and much briefer introduction to the subject, chapters 12-13 of Banerjee's [Intermediate Microeconomics](https://banerjeemicro.com/) are very good.
 
-Organize your courses by years, topics, or universities, however you like!
-{% endcomment %}
+If you have any questions about the course (as a student or otherwise), please feel free to reach out!
