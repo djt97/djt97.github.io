@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
+title: research
 permalink: /projects/
-description: My research and other things I'm working on.
+description: research projects or other things I'm working on.
 nav: true
 nav_order: 1
 display_categories: [research (working papers), research (in progress)] # Will add more here as time progresses!
