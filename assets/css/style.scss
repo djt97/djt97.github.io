@@ -1,0 +1,53 @@
+.anki-card-example {
+    background-color: #f8f8f8; /* Light gray background */
+    border: 1px solid #ddd;      /* Light gray border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;          /* Default text color for light mode (dark gray) - for *most* text */
+  }
+  
+  .anki-card-example strong {
+    font-weight: bold;
+    color: black; /*  <--  INCORRECT - this was causing the problem in light mode */
+    color: inherit; /*  <-- CORRECT FIX: Inherit color from parent (.anki-card-example) */
+  }
+  
+  .anki-card-example code {
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .anki-card-example {
+      background-color: #333; /* Dark gray background for dark mode */
+      color: #eee;          /* Light gray text color for dark mode */
+      border-color: #555;
+    }
+    .anki-card-example strong { /*  <--  Ensure strong tags are also light in dark mode (if needed) */
+      color: inherit; /*  <--  Inherit color from parent (.anki-card-example) - should already be light */
+    }
+  }
+
+  body blockquote {
+    line-height: 1.6;           /* Increase line spacing (adjust value as needed) */
+    font-size: 1.05em;          /* Slightly reduce font size (adjust value as needed) */
+    /* You can keep other blockquote styles from before, or add more here, e.g., */
+    /* color: #555;             /* Optional: Darker text color for quotes */
+    /* border-left: 3px solid #ddd; /* Optional: Left border for quotes */
+    /* padding-left: 15px;      /* Optional: Left padding for quotes */
+    /* margin-left: 10px;       /* Optional: Left margin for quotes */
+  }
+
+  /* NEW CSS RULE - for paragraphs *inside* blockquotes */
+body blockquote p {
+    margin-bottom: 10px; /* Adjust this value to control spacing between quote paragraphs */
+  }
