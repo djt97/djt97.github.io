@@ -3,6 +3,7 @@ layout: distill
 title: Memorize First, Understand Later?
 date: 2025-01-31 09:00:00+1100
 description: Is learning like building a house, or solving a puzzle?
+giscus_comments: true
 tags: [memory, learning, spaced-repetition]
 categories: [learning]
 toc:
