@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bad Networks R&R at JPubE
+title: 🔄 Bad Networks R&R at JPubE
 date: 2024-11-30 09:00:00+0000
 inline: false # true if you just want inline
 related_posts: false

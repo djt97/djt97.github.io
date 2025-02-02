@@ -3,6 +3,7 @@ layout: distill
 title: Memorize First, Understand Later?
 date: 2025-01-31 09:00:00+1100
 description: Is learning like building a house, or solving a puzzle?
+giscus_comments: true
 tags: [memory, learning, spaced-repetition]
 categories: [learning]
 toc:
@@ -79,7 +80,7 @@ Although I made it sound like Andy and Joe would disagree with me on this, Joe m
 
 YES. This is *exactly* right. But the conversation moved on immediately after this, and I thought this point deserved some exposition, which is why we're here.
 
-The beauty of memorizing first is that it can accelerate the learning process. By having the 'answer' or the key fact already in your memory, even without full comprehension, you create a mental hook for new information to attach to. When you later delve into understanding, you're not starting from zero; you already have a framework to build upon. However, it's essential to revisit these 'bookmarked' prompts and actively work towards understanding. If you simply memorize and never return to understand, then Wozniak's warning about meaningless knowledge becomes valid. The mental bookmark is only useful if you eventually turn the page.
+The beauty of memorizing first is that it can accelerate the learning process. By having the 'answer' or the key fact already in your memory before understanding every detail, you create a mental hook for new information to attach to. When you later beginning putting the pieces of the puzzle together, you're not starting without a picture. That being said, if you simply memorize and never return to these prompts to fill the gaps in your understanding, then Wozniak's warning about meaningless knowledge becomes valid. The mental bookmark is only useful if you eventually turn the page.
 
 I'm interested to hear whether other people have had this experience too. Please feel free to reach out to me if you have any thoughts on the role of memorization in learning and understanding!
 

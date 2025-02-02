@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check out our paper at GAMES 2024.
+title: 🎮 Check out our paper at GAMES 2024.
 date: 2024-08-18 09:00:00+0000
 inline: false # true if you just want inline
 related_posts: false
