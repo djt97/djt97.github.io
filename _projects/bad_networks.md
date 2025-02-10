@@ -5,11 +5,7 @@ description: "How did we get stuck in the social media trap? With <a href='https
 img: assets/img/publication_preview/bad-networks.png
 importance: 1
 category: "research (working papers)"
-giscus_comments: true
+redirect_to: /assets/pdf/Bad_Networks_May_2024.pdf
 # related_publications: true
 ---
-
-<div class="post">
-<object data="/assets/pdf/Bad_Networks_May_2024.pdf#pagemode=none" width="750" height="1000" type='application/pdf'></object>
-</div>
 

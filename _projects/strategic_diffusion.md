@@ -5,9 +5,5 @@ description: "How does influence shape the provision of public goods and bads? W
 img: assets/img/sd-graph.png
 importance: 2
 category: "research (working papers)"
-giscus_comments: true
+redirect_to: /assets/pdf/Strategic_Diffusion_September_2024.pdf
 ---
-
-<div class="post">
-<object data="/assets/pdf/Strategic_Diffusion_September_2024.pdf#pagemode=none" width="750" height="1000" type='application/pdf'></object>
-</div>

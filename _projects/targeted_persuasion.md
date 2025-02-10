@@ -5,9 +5,5 @@ description: "Who should you target to persuade a group? With <a href='https://g
 img: assets/img/targeted.png
 importance: 3
 category: "research (working papers)"
-giscus_comments: true
+redirect_to: /assets/pdf/Targeted_Persuasion_2025.pdf
 ---
-
-<div class="post">
-<object data="/assets/pdf/Targeted_Persuasion_2025.pdf#pagemode=none" width="750" height="1000" type='application/pdf'></object>
-</div>
