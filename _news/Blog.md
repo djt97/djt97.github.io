@@ -6,4 +6,4 @@ inline: true # true if you just want inline
 related_posts: false
 ---
 
-📝 I’ve made my [inaugural blog post!](blog/2025/memorize-first-understand-later/) :)
+📝 I’ve made my [inaugural blog post!](/blog/2025/memorize-first-understand-later/) :)
