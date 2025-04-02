@@ -4,8 +4,8 @@ title: Do Economists Care About Lying?
 date: 2025-04-02 09:00:00+1100
 description: When do processes matter more than outcomes?
 giscus_comments: true
-tags: [economics, ethics, lying, algorithms]
-categories: [learning]
+tags: [economics, ethics, lying, algorithms, communication games]
+categories: [economics]
 toc:
     - name: Introduction
     - name: Models
