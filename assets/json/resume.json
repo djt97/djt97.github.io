@@ -76,13 +76,13 @@
       "name": "Learning with Feedback Loops",
       "publisher": "Working Paper",
       "summary": "Abstract?",
-       "url": "/projects/bad_networks"
+      "url": "/projects/bad_networks"
     },
     {
       "name": "Bad Networks",
       "publisher": "Working Paper",
       "summary": "with R. Holden and R. Akerlof",
-       "url": "/projects/bad_networks"
+      "url": "/projects/bad_networks"
     },
     {
       "name": "Strategic Diffusion: Public Goods vs. Public Bads",
@@ -123,56 +123,56 @@
     }
   ],
   "work": [
-  {
-    "name": "University of New South Wales",
-    "position": "Lecturer",
-    "startDate": "2020",
-    "endDate": "Present",
-    "highlights": [
-      "ECON2112: Game Theory, Lecturer in Charge (T3, 2024)",
-      "ECON1401: Economic Perspectives, Lecturer in Charge (T1, 2024)",
-      "ECON2112: Game Theory, Lecturer in Charge (T3, 2023)",
-      "ECON3202: Mathematical Economics (T2, 2023)",
-      "ECON3125: Economics of Health and Human Capital, Lecturer in Charge (T3, 2022)",
-      "ECON2101: Intermediate Microeconomics (T2, 2022)",
-      "ECON3202: Mathematical Economics (T2, 2022)",
-      "ECON3208: Applied Econometric Methods, Lecturer in Charge (T1, 2022)",
-      "ECON1401: Economic Perspectives, Lecturer in Charge (T1, 2022)",
-      "ECON1401: Economic Perspectives (T3, 2021)",
-      "ECON5323: Organisational Economics (T3, 2021)",
-      "ECON2112: Game Theory (T1, 2020)",
-      "ECON1202: Quantitative Analysis (T1, 2020)"
-    ]
-  },
-  {
-    "name": "University of New South Wales",
-    "position": "Tutor",
-    "startDate": "2018",
-    "endDate": "Present",
-    "highlights": [
-      "ECON2112: Game Theory (T3, 2024)",
-      "ECON2112: Game Theory (T3, 2023)",
-      "ECON3123: Organisational Economics (T3, 2021)",
-      "ECON3101: Markets and Frictions (T2, 2021)",
-      "ECON2112: Game Theory (T1, 2021)",
-      "ECON2101: Intermediate Microeconomics (T1, 2021)",
-      "ECON1401: Economic Perspectives (T3, 2020)",
-      "ECON3123: Organisational Economics (T3, 2020)",
-      "ECON3101: Markets and Frictions (T2, 2020)",
-      "ECON2112: Game Theory (T1, 2020)",
-      "ECON2101: Intermediate Microeconomics (T1, 2020)",
-      "ECON1401: Economic Perspectives (T3, 2019)",
-      "ECON3101: Markets and Frictions (T2, 2019)",
-      "ECON2101: Intermediate Microeconomics (T2, 2019)",
-      "ECON2112: Game Theory (T1, 2019)",
-      "ECON3121: Managerial Economics (S2, 2018)",
-      "ECON5103: Business Economics (S2, 2018)",
-      "ECON3124: Behavioural Economics (S1, 2018)",
-      "ECON2112: Game Theory (S1, 2018)",
-      "ECON2206: Introductory Econometrics, Peer-Assisted Support Scheme (S2, 2017)"
-    ]
-  }
-],
+    {
+      "name": "University of New South Wales",
+      "position": "Lecturer",
+      "startDate": "2020",
+      "endDate": "Present",
+      "highlights": [
+        "ECON2112: Game Theory, Lecturer in Charge (T3, 2024)",
+        "ECON1401: Economic Perspectives, Lecturer in Charge (T1, 2024)",
+        "ECON2112: Game Theory, Lecturer in Charge (T3, 2023)",
+        "ECON3202: Mathematical Economics (T2, 2023)",
+        "ECON3125: Economics of Health and Human Capital, Lecturer in Charge (T3, 2022)",
+        "ECON2101: Intermediate Microeconomics (T2, 2022)",
+        "ECON3202: Mathematical Economics (T2, 2022)",
+        "ECON3208: Applied Econometric Methods, Lecturer in Charge (T1, 2022)",
+        "ECON1401: Economic Perspectives, Lecturer in Charge (T1, 2022)",
+        "ECON1401: Economic Perspectives (T3, 2021)",
+        "ECON5323: Organisational Economics (T3, 2021)",
+        "ECON2112: Game Theory (T1, 2020)",
+        "ECON1202: Quantitative Analysis (T1, 2020)"
+      ]
+    },
+    {
+      "name": "University of New South Wales",
+      "position": "Tutor",
+      "startDate": "2018",
+      "endDate": "Present",
+      "highlights": [
+        "ECON2112: Game Theory (T3, 2024)",
+        "ECON2112: Game Theory (T3, 2023)",
+        "ECON3123: Organisational Economics (T3, 2021)",
+        "ECON3101: Markets and Frictions (T2, 2021)",
+        "ECON2112: Game Theory (T1, 2021)",
+        "ECON2101: Intermediate Microeconomics (T1, 2021)",
+        "ECON1401: Economic Perspectives (T3, 2020)",
+        "ECON3123: Organisational Economics (T3, 2020)",
+        "ECON3101: Markets and Frictions (T2, 2020)",
+        "ECON2112: Game Theory (T1, 2020)",
+        "ECON2101: Intermediate Microeconomics (T1, 2020)",
+        "ECON1401: Economic Perspectives (T3, 2019)",
+        "ECON3101: Markets and Frictions (T2, 2019)",
+        "ECON2101: Intermediate Microeconomics (T2, 2019)",
+        "ECON2112: Game Theory (T1, 2019)",
+        "ECON3121: Managerial Economics (S2, 2018)",
+        "ECON5103: Business Economics (S2, 2018)",
+        "ECON3124: Behavioural Economics (S1, 2018)",
+        "ECON2112: Game Theory (S1, 2018)",
+        "ECON2206: Introductory Econometrics, Peer-Assisted Support Scheme (S2, 2017)"
+      ]
+    }
+  ],
   "research assistance": [
     {
       "organization": "University of New South Wales",

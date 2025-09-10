@@ -8,4 +8,3 @@ category: "research (working papers)"
 redirect_to: /assets/pdf/Bad_Networks_September_2025.pdf
 # related_publications: true
 ---
-

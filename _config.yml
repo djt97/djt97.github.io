@@ -33,7 +33,7 @@ url: https://djt97.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button 
+back_to_top: true # set to false to disable the back to top button
 timezone: Australia/Sydney # the timezone you are in
 
 # -----------------------------------------------------------------------------
@@ -98,7 +98,7 @@ instagram_id: # your instagram id
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
-linkedin_username:  DJ Thornton # your LinkedIn user name
+linkedin_username: DJ Thornton # your LinkedIn user name
 scholar_userid: meYZSq8AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
@@ -170,7 +170,6 @@ giscus:
   theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
   emit_metadata: 0
   lang: en
-
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,

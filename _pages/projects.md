@@ -41,6 +41,7 @@ horizontal: false
 <!-- Display projects without categories -->
 
 {% assign sorted_projects = site.projects | where_exp: "item", "item.hidden != true" | sort: "importance" %}
+
   <!-- Generate cards for each project -->
 
 {% if page.horizontal %}

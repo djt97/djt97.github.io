@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Economist. 28. Dad of 3. # <a href='https://www.unsw.edu.au/business/our-schools/economics/our-research/research-students'>UNSW Sydney</a>. 
+subtitle: Economist. 28. Dad of 3. # <a href='https://www.unsw.edu.au/business/our-schools/economics/our-research/research-students'>UNSW Sydney</a>.
 
 profile:
   align: right
