@@ -16,13 +16,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a PhD candidate at UNSW Sydney studying microeconomic theory. [My research](/projects/) is focused on collective action problems on social networks, and more recently on cognitive economics. I will be joining the Manos Institute for Cognitive Economics as a Postdoctoral Fellow in September of 2025.
+I study how human cognition and social networks shape economic behavior. I am currently a Postdoctoral Fellow at the [Manos Institute for Cognitive Economics](https://www.cognitiveeconomics.com/) at UNSW Sydney, where we are pioneering work on the limits of human computational capacity and the individual reasoning process. My [PhD research](/projects/) was on the economic theory of social networks, with a focus on situations in which their effects are harmful.
 
 I completed my undergraduate degrees in Pure Math (with Honours) and Commerce. My [2019 honours thesis](/assets/pdf/DJ_Honours_Thesis.pdf) was on the theory of the giant component and information cascades in random graphs.
 
-I was the youngest lecturer for the faculty of Economics at UNSW in 2020 when I began lecturing at age 23. I have an extensive teaching record and have lectured 14 courses and tutored 20 courses since 2018, spanning economic theory, economic history, applied microeconomics, and econometrics.
+I have an extensive teaching record and was the youngest lecturer for the faculty of Economics at UNSW at age 23. Since 2018 I have lectured 14 courses and tutored 20 more, covering topics including economic theory, economic history, applied microeconomics, and econometrics.
 
-Outside of academia, I love music, philosophy, coffee, and most importantly spending time with my family. My wife and I also run a [paediatric occupational therapy clinic](https://www.bloom-ps.com.au/). You can find some photos of my wonderful family [here.]({% link _projects/family_photos.md %})
+Outside of academia, I love music, philosophy, coffee, and most importantly spending time with my family. My wife and I also run a [paediatric occupational therapy clinic](https://www.bloom-ps.com.au/). You can find some photos of my family [here.]({% link _projects/family_photos.md %})
 
 <!-- ![Landscape Long Image](family_photo_2.jpeg)-->
 

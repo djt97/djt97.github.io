@@ -2,7 +2,7 @@
 layout: page
 title: Learning with Feedback Loops
 description: Many learning processes have the feature that realizations of the data affect the data generating process itself.
-img: assets/img/learning.png
+img: assets/img/learning-with-feedback.png
 importance: 1
 category: "research (in progress)"
 related_publications: false # true for references.
