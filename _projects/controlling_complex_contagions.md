@@ -7,5 +7,4 @@ importance: 4
 category: "research (working papers)"
 redirect_to: /assets/pdf/Controlling_Complex_Contagions_Nov_2025.pdf
 giscus_comments: false
-# hidden: false
 ---
