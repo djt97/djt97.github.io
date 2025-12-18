@@ -2,7 +2,7 @@
 layout: distill
 title: AI is turning us into proof-checkers, not proof-writers.
 date: 2025-12-18 09:00:00+1100
-description: In a world where AI can write proofs, the real skills are asking the right questions and intuiting the answers.
+description: In a world where AI can write proofs, the real skills are asking the right questions and having a deep intuition for the answers.
 image: assets/img/proof-machine.png
 bibliography: proof-checkers.bib
 giscus_comments: true
