@@ -5,5 +5,5 @@ description: "How does influence shape the diffusion of good and bad behaviors? 
 img: assets/img/donating-influence.png
 importance: 1
 category: "Working Papers"
-redirect_to: /assets/pdf/Strategic_Influence_July_2025.pdf
+redirect_to: /assets/pdf/Strategic_Influence_Dec_2025.pdf
 ---
