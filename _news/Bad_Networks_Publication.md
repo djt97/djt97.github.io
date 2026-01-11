@@ -6,4 +6,4 @@ inline: true # true if you just want inline
 related_posts: false
 ---
 
-🎉 I’m excited to share my first publication, **[Bad Networks](https://djthornton.org/assets/pdf/Bad_Networks_January_2026.pdf)**, forthcoming in the _Journal of Public Economics_!
+🎉 I’m excited to share my first publication, **[Bad Networks](https://djthornton.org/assets/pdf/Bad_Networks_January_2026.pdf)**, forthcoming in the _Journal of Public Economics._
