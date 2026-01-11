@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Bad Networks
-description: "How did we get stuck in the social media trap? With <a href='https://robertakerlof.com/'>Robert Akerlof</a> and  <a href='https://richardholden.org/'>Richard Holden.</a> <br><br> <i> Revised and Resubmitted (2nd round) to the Journal of Public Economics.</i>"
+description: "How did we get stuck in the social media trap? With <a href='https://robertakerlof.com/'>Robert Akerlof</a> and  <a href='https://richardholden.org/'>Richard Holden.</a> <br><br> <i>Journal of Public Economics, forthcoming.</i>"
 img: assets/img/bad-networks.png
-importance: 2
-category: "research (working papers)"
-redirect_to: /assets/pdf/Bad_Networks_September_2025.pdf
+importance: 1
+category: "Publications"
+redirect_to: /assets/pdf/Bad_Networks_January_2026.pdf
 # related_publications: true
 ---

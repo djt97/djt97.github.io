@@ -5,7 +5,7 @@ permalink: /projects/
 description: research projects or other things I'm working on.
 nav: true
 nav_order: 1
-display_categories: [research (working papers)] # Will add more here as time progresses!
+display_categories: [Publications, Working Papers] # Will add more here as time progresses!
 horizontal: false
 ---
 
