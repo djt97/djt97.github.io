@@ -1,6 +1,6 @@
 <div class="col">
   <div class="card h-100 hoverable">
-    <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    <a href="{% if project.pdf %}{{ project.pdf | relative_url }}{% elsif project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
       {% if project.img %}
         {% include figure.liquid loading="eager" path=project.img sizes="250px" alt="project thumbnail" class="card-img-top" %}
       {% endif %}
@@ -8,7 +8,41 @@
         <h2 class="card-title">{{ project.title }}</h2>
       </div>
     </a>
+
     <p class="card-text">{{ project.description }}</p>
+
+    <!-- BUTTONS HERE -->
+    <div class="links ml-1 mr-1 mb-2">
+      {% if project.abstract %}
+        <button type="button"
+                class="abstract btn btn-sm z-depth-0"
+                data-toggle="modal"
+                data-target="#abs-{{ project.title | slugify }}"
+                title = "Abstract">
+          Abs
+        </button>
+      {% endif %}
+
+      {% if project.doi %}
+        <a href="https://doi.org/{{ project.doi }}"
+           class="btn btn-sm z-depth-0"
+           role="button"
+           target="_blank"
+           rel="noopener">
+          DOI
+        </a>
+      {% endif %}
+
+      {% if project.pdf %}
+        <a href="{{ project.pdf | relative_url }}"
+           class="btn btn-sm z-depth-0"
+           role="button">
+          PDF
+        </a>
+      {% endif %}
+    </div>
+    <!-- END BUTTONS -->
+
     <div class="row ml-1 mr-1 p-0">
       {% if project.github %}
         <div class="github-icon">

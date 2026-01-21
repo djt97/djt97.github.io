@@ -8,7 +8,7 @@ middle_name:
 last_name: Thornton
 email: d.thornton@unsw.edu.au
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Economist. 27. Dad of 3. Trying to build something.
+  Economist. 28. Dad of 3.
 footer_text: >
   Check out my <a href="/projects" target="_blank">research</a>!
 # or my <a href="/blog" target="_blank">blog</a>!
@@ -17,14 +17,27 @@ keywords:
   - economics
   - microeconomic theory
   - research
+  - collective action
   - collective action problems
+  - cognitive economics
   - networks
   - random graphs
   - social learning
+  - social networks
+  - social media
+  - social influence
+  - social norms
+  - social behavior
+  - bad networks
   - teaching
   - culture
   - narratives
+  - learning
   - UNSW Sydney
+  - University of New South Wales
+  - DJ Thornton
+  - D J Thornton
+  - D. J. Thornton
   - academic website
   - research website
   - sydney australia # Combining for better searchability
@@ -123,7 +136,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  The easiest way to reach me is to email me or dm me on X.
+  The easiest way to reach me is via email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

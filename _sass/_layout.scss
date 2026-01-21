@@ -51,3 +51,75 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+/* --- Bootstrap modals: match al-folio light/dark --- */
+.modal-content {
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  border: 1px solid var(--global-divider-color);
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--global-divider-color);
+}
+
+.modal-content a {
+  color: var(--global-theme-color);
+}
+
+/* Bootstrap 4 close button */
+.modal .close {
+  color: var(--global-text-color);
+  text-shadow: none;
+  opacity: 0.8;
+}
+.modal .close:hover {
+  opacity: 1;
+}
+
+/* --- Abstract modal readability --- */
+
+/* Make the modal a bit wider on large screens (still responsive) */
+.modal-dialog.modal-lg {
+  max-width: 900px; // adjust to taste (e.g. 820–980)
+}
+
+/* Comfortable type + spacing */
+.modal-body {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  padding: 1.25rem 1.5rem;
+
+  max-width: min(78ch, 100%);
+  margin: 0 auto;
+
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
+/* If markdown produces multiple paragraphs, space them nicely */
+.modal-body p {
+  margin-bottom: 0.9rem;
+}
+
+/* Keep the last paragraph from adding extra blank space */
+.modal-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Header/footer spacing */
+.modal-header {
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+
+.modal-footer {
+  padding: 0.75rem 1.5rem 1rem 1.5rem;
+}
+
+/* Optional: slightly more prominent title */
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
