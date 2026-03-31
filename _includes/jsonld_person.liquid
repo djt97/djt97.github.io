@@ -1,0 +1,42 @@
+{% if page.url == '/' %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}",
+      "url": "{{ site.url }}",
+      "image": "{{ '/assets/img/DJ_Headshot.png' | absolute_url }}",
+      "email": "mailto:{{ site.email }}",
+      "jobTitle": "Postdoctoral Fellow",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "UNSW Sydney",
+        "url": "https://www.unsw.edu.au"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Manos Institute for Cognitive Economics",
+        "url": "https://www.cognitiveeconomics.com/"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "UNSW Sydney",
+        "url": "https://www.unsw.edu.au"
+      },
+      "description": "Economist and Postdoctoral Fellow at the Manos Institute for Cognitive Economics at UNSW Sydney. Research in economic theory, social networks, and information design. PhD in Economics from UNSW (2025). Published in the Journal of Public Economics.",
+      "knowsAbout": [
+        "Economic theory",
+        "Social networks",
+        "Information design",
+        "Cognitive economics",
+        "Collective action",
+        "Social learning"
+      ],
+      "sameAs": [
+        "https://orcid.org/{{ site.orcid_id }}",
+        "https://scholar.google.com/citations?user={{ site.scholar_userid }}",
+        "https://twitter.com/{{ site.x_username }}"
+      ]
+    }
+  </script>
+{% endif %}

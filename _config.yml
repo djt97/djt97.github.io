@@ -8,18 +8,35 @@ middle_name:
 last_name: Thornton
 email: d.thornton@unsw.edu.au
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Economist. 28. Dad of 3.
+  DJ Thornton is an economist and Postdoctoral Fellow at the Manos Institute
+  for Cognitive Economics at UNSW Sydney. His research focuses on economic
+  theory, social networks, and information design. He completed his PhD in
+  Economics at UNSW in 2025 and has published in the Journal of Public
+  Economics.
 footer_text: >
   Check out my <a href="/projects" target="_blank">research</a>!
 # or my <a href="/blog" target="_blank">blog</a>!
 keywords:
+  - DJ Thornton
+  - D J Thornton
+  - D. J. Thornton
+  - Daniel Thornton
+  - Daniel J Thornton
+  - Daniel J. Thornton
   - economist
   - economics
+  - UNSW Sydney
+  - University of New South Wales
+  - PhD Economics
+  - Postdoctoral Fellow
+  - Journal of Public Economics
   - microeconomic theory
+  - economic theory
   - research
   - collective action
   - collective action problems
   - cognitive economics
+  - information design
   - networks
   - random graphs
   - social learning
@@ -33,11 +50,6 @@ keywords:
   - culture
   - narratives
   - learning
-  - UNSW Sydney
-  - University of New South Wales
-  - DJ Thornton
-  - D J Thornton
-  - D. J. Thornton
   - academic website
   - research website
   - sydney australia # Combining for better searchability
@@ -88,9 +100,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/DJ_Headshot.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
