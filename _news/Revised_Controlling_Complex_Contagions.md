@@ -6,4 +6,4 @@ inline: true # true if you just want inline
 related_posts: false
 ---
 
-🔄 **_Revised Paper_** : We've just released a huge revision of [Controlling Complex Contagions](/projects/controlling_complex_contagions). Check it out!
+🔄 **_Revised Paper_** : We've just released a huge revision of [Controlling Complex Contagions](/assets/pdf/Controlling_Complex_Contagions_Mar_2026.pdf). Check it out!

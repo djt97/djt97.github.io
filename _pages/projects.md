@@ -14,19 +14,24 @@ horizontal: false
 {% assign all_projects = "" | split: "" %}
 
 {% if site.enable_project_categories and page.display_categories %}
+
   <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
 
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | where_exp: "item", "item.hidden != true" | sort: "importance" %}
+{% for category in page.display_categories %}
+<a id="{{ category }}" href=".#{{ category }}">
 
-  {%- assign all_projects = all_projects | concat: sorted_projects -%}
+<h2 class="category">{{ category }}</h2>
+</a>
+
+{% assign categorized_projects = site.projects | where: "category", category %}
+{% assign sorted_projects = categorized_projects | where_exp: "item", "item.hidden != true" | sort: "importance" %}
+
+{%- assign all_projects = all_projects | concat: sorted_projects -%}
 
   <!-- Generate cards for each project -->
-  {% if page.horizontal %}
+
+{% if page.horizontal %}
+
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
@@ -46,11 +51,14 @@ horizontal: false
 {% else %}
 
 <!-- Display projects without categories -->
+
 {% assign sorted_projects = site.projects | where_exp: "item", "item.hidden != true" | sort: "importance" %}
 {%- assign all_projects = sorted_projects -%}
 
 <!-- Generate cards for each project -->
+
 {% if page.horizontal %}
+
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
@@ -69,8 +77,10 @@ horizontal: false
 </div>
 
 <!-- ✅ MODALS RENDERED OUTSIDE THE GRID -->
+
 {% for project in all_projects %}
 {% if project.abstract %}
+
 <div class="modal fade" id="abs-{{ project.title | slugify }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -95,6 +105,7 @@ horizontal: false
         <button type="button" class="btn btn-sm z-depth-0" data-dismiss="modal">Close</button>
       </div>
     </div>
+
   </div>
 </div>
 {% endif %}

@@ -17,8 +17,8 @@ horizontal: false
     <h2 class="category">{{ category }}</h2>
   </a>
 
-  {% assign categorized_tools = site.tools | where: "category", category %}
-  {% assign sorted_tools = categorized_tools | where_exp: "item", "item.hidden != true" | sort: "importance" %}
+{% assign categorized_tools = site.tools | where: "category", category %}
+{% assign sorted_tools = categorized_tools | where_exp: "item", "item.hidden != true" | sort: "importance" %}
 
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in sorted_tools %}

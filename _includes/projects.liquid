@@ -14,29 +14,35 @@
     <!-- BUTTONS HERE -->
     <div class="links ml-1 mr-1 mb-2">
       {% if project.abstract %}
-        <button type="button"
-                class="abstract btn btn-sm z-depth-0"
-                data-toggle="modal"
-                data-target="#abs-{{ project.title | slugify }}"
-                title = "Abstract">
+        <button
+          type="button"
+          class="abstract btn btn-sm z-depth-0"
+          data-toggle="modal"
+          data-target="#abs-{{ project.title | slugify }}"
+          title="Abstract"
+        >
           Abs
         </button>
       {% endif %}
 
       {% if project.doi %}
-        <a href="https://doi.org/{{ project.doi }}"
-           class="btn btn-sm z-depth-0"
-           role="button"
-           target="_blank"
-           rel="noopener">
+        <a
+          href="https://doi.org/{{ project.doi }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          target="_blank"
+          rel="noopener"
+        >
           DOI
         </a>
       {% endif %}
 
       {% if project.pdf %}
-        <a href="{{ project.pdf | relative_url }}"
-           class="btn btn-sm z-depth-0"
-           role="button">
+        <a
+          href="{{ project.pdf | relative_url }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+        >
           PDF
         </a>
       {% endif %}
