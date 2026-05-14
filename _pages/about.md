@@ -29,16 +29,16 @@ home:
   selected_work:
     - title: Bad Networks
       status: Journal of Public Economics, 2026
-      url: /projects/bad_networks/
+      url: /assets/pdf/Bad_Networks_JPubE.pdf
     - title: Strategic Influence
       status: R&R, Econometrica (2nd round)
-      url: /projects/strategic_diffusion/
+      url: /assets/pdf/Strategic_Diffusion_Dec_2025.pdf
     - title: Targeted Persuasion
       status: "R&R, AEJ: Microeconomics"
-      url: /projects/targeted_persuasion/
+      url: /assets/pdf/Targeted_Persuasion_2025.pdf
     - title: Controlling Complex Contagions
       status: Working paper
-      url: /projects/controlling_complex_contagions/
+      url: /assets/pdf/Controlling_Complex_Contagions_May_2026.pdf
     - title: Ghostwriter for Anki
       status: Research tool
       url: /ghostwriter-for-anki/
