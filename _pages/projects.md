@@ -2,9 +2,9 @@
 layout: page
 title: research
 permalink: /projects/
-description: research projects or other things I'm working on.
+description: Papers on networks, persuasion, and cognition.
 nav: true
-nav_order: 1
+nav_order: 2
 display_categories: [Publications, Working Papers] # Will add more here as time progresses!
 horizontal: false
 ---

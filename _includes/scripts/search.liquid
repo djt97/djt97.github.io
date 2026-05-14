@@ -39,7 +39,7 @@
       },
       {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
       {%- for p in sorted_pages -%}
-        {%- if p.nav and p.autogen == null -%}
+        {%- if p.nav and p.autogen == null and p.published != false -%}
           {%- if p.dropdown -%}
             {%- for child in p.children -%}
               {%- unless child.title == 'divider' -%}
@@ -119,6 +119,7 @@
       {%- for collection in site.collections -%}
         {%- if collection.label != 'news' and collection.label != 'posts' -%}
           {%- for item in collection.docs -%}
+            {%- if item.hidden != true and item.published != false -%}
             {
               {%- if item.inline -%}
                 {%- assign title = item.content | remove: '<p>' | remove: '</p>' | escape | strip -%}
@@ -131,10 +132,17 @@
               section: "{{ collection.label | capitalize }}",
               {%- unless item.inline -%}
                 handler: () => {
-                  window.location.href = "{{ item.url | relative_url }}";
+                  {%- if item.redirect contains '://' -%}
+                    window.open("{{ item.redirect }}", "_blank");
+                  {%- elsif item.redirect -%}
+                    window.location.href = "{{ item.redirect | relative_url }}";
+                  {%- else -%}
+                    window.location.href = "{{ item.url | relative_url }}";
+                  {%- endif -%}
                 },
               {%- endunless -%}
             },
+            {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
       {%- endfor -%}

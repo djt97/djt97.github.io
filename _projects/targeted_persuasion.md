@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Targeted Persuasion"
-description: "Who should you target to persuade a group? With <a href='https://gratton.org/'>Gabriele Gratton</a> and <a href='https://sites.google.com/view/christopherteh/'>Chris Teh.</a><br><br> <i>Revise and Resubmit at American Economic Journal: Microeconomics.</i>"
+description: "Who should you target to persuade a group? With <a href='https://gratton.org/'>Gabriele Gratton</a> and <a href='https://sites.google.com/view/christopherteh/'>Chris Teh.</a><br><br> <i>R&R, AEJ: Microeconomics.</i>"
 img: assets/img/targeted-persuasion.png
 importance: 2
 category: "Working Papers"

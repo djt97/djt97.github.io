@@ -6,4 +6,4 @@ inline: true # true if you just want inline
 related_posts: false
 ---
 
-🔄 **_Revised Paper_** : A new version of [Targeted Persuasion](/projects/targeted_persuasion) is now available!
+**_Revised Paper_** : A new version of [Targeted Persuasion](/projects/targeted_persuasion) is now available!

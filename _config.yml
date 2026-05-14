@@ -123,7 +123,7 @@ instagram_id: # your instagram id
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
-linkedin_username: DJ Thornton # your LinkedIn user name
+linkedin_username: dj-thornton-184946205 # your LinkedIn user name
 scholar_userid: meYZSq8AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
@@ -169,7 +169,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Open Questions # blog_name will be displayed in your blog page
-blog_description: A blog on thoughts in progress # aaa
+blog_description: Essays on economics, AI, and tools&nbsp;for&nbsp;thought. # aaa
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -212,8 +212,8 @@ external_sources: # none.
 # -----------------------------------------------------------------------------
 
 newsletter:
-  enabled: false
-  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
+  enabled: true
+  endpoint: cmopgig9n1xo70i0g3iw2d02v
   # https://loops.so/docs/forms/custom-form
 
 # -----------------------------------------------------------------------------
@@ -277,11 +277,12 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
   - vendor
+  - WEBSITE_OVERHAUL_PLAN.md
+  - LEFT_TO_DO.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -519,7 +520,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Crimson+Pro:400,500,600,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

@@ -6,4 +6,4 @@ inline: true # true if you just want inline
 related_posts: false
 ---
 
-🚨 **_New Paper_** : [Targeted Persuasion](/projects/targeted_persuasion) with Chris Teh and Gabriele Gratton out now!
+**_New Paper_** : [Targeted Persuasion](/projects/targeted_persuasion) with Chris Teh and Gabriele Gratton out now!

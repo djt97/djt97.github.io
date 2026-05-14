@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-I'm not currently teaching any courses but if you want to reach out about something related to a course I have taught (a full list can be found in my [cv](/assets/pdf/DJ_CV_2025.pdf)), please do!
+I'm not currently teaching, but I've lectured 14 courses and tutored 20 more at UNSW since 2018 — economic theory, game theory, economic history, applied microeconomics, and econometrics. Full list on my [cv](/cv/). If something I've taught is relevant to you, please reach out.
 
 <!-- This term (Feb-Apr 2025) I'm teaching ECON2112: Game Theory and Business Strategy. You can find an earlier version of the course outline [here](https://www.unsw.edu.au/course-outlines/course-outline#year=2024&term=Term%203&deliveryMode=In%20Person&deliveryFormat=Standard&teachingPeriod=T3&deliveryLocation=Kensington&courseCode=ECON2112&activityGroupId=1).
 

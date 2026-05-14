@@ -1,0 +1,44 @@
+{% if include.items %}
+  {% assign selected_items = include.items %}
+{% elsif page.home.selected_work %}
+  {% assign selected_items = page.home.selected_work %}
+{% endif %}
+{% assign selected_heading = include.heading | default: page.home.selected_work_heading | default: 'Selected Work' %}
+{% assign selected_all_label = include.all_label | default: page.home.selected_work_all_label | default: 'All research' %}
+{% assign selected_all_url = include.all_url | default: page.home.selected_work_all_url | default: '/projects/' %}
+
+<div class="home-selected-work{% if include.compact %} home-selected-work-compact{% endif %}">
+  <div class="home-selected-header">
+    <span>{{ selected_heading }}</span>
+    <a href="{{ selected_all_url | relative_url }}">{{ selected_all_label }}</a>
+  </div>
+  {% if selected_items %}
+    {% for item in selected_items %}
+      <a class="home-work-item" href="{{ item.url | relative_url }}">
+        <strong>{{ item.title }}</strong>
+        <span>{{ item.status }}</span>
+      </a>
+    {% endfor %}
+  {% else %}
+    <a class="home-work-item" href="{{ '/projects/bad_networks/' | relative_url }}">
+      <strong>Bad Networks</strong>
+      <span>Journal of Public Economics, 2026</span>
+    </a>
+    <a class="home-work-item" href="{{ '/projects/strategic_diffusion/' | relative_url }}">
+      <strong>Strategic Influence</strong>
+      <span>R&amp;R, Econometrica</span>
+    </a>
+    <a class="home-work-item" href="{{ '/projects/targeted_persuasion/' | relative_url }}">
+      <strong>Targeted Persuasion</strong>
+      <span>R&amp;R, AEJ: Microeconomics</span>
+    </a>
+    <a class="home-work-item" href="{{ '/projects/controlling_complex_contagions/' | relative_url }}">
+      <strong>Controlling Complex Contagions</strong>
+      <span>Working paper</span>
+    </a>
+    <a class="home-work-item" href="{{ '/ghostwriter-for-anki/' | relative_url }}">
+      <strong>Ghostwriter for Anki</strong>
+      <span>Research tool</span>
+    </a>
+  {% endif %}
+</div>

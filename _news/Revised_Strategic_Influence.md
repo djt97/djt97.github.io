@@ -6,4 +6,4 @@ inline: true # true if you just want inline
 related_posts: false
 ---
 
-🔄 **_Revised Paper_** : We've just released a huge revision of [Strategic Influence](/projects/strategic_diffusion). Check it out!
+**_Revised Paper_** : We've just released a huge revision of [Strategic Influence](/projects/strategic_diffusion). Check it out!

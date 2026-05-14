@@ -115,6 +115,8 @@ What this all amounts to is a pivot from asking "What will I finish?" to "How lo
 
 If you recognise the feeling of that week—of being "productive" yet feeling like a failure—I can only suggest trying the method. For a single week, trade your list of outcomes for a schedule of effort. Decide on Monday how many hours a given project deserves, and then work those hours. The goal is no longer to 'finish the draft'; the goal is to 'work on the draft for five hours'. For me, this change didn't just improve my productivity; it lifted the chronic, low-grade stress of feeling perpetually behind on everything. I hope it does the same for you.
 
+DJ
+
 ## Addendum
 
 To see how to set the right milestones, let's build a simple model of a task or project.
@@ -131,7 +133,7 @@ $$
 
 ### Motivation: Reference Points and Costs
 
-Now, we can model the agent's motivation at any point in time. [The Psychology of Motivation](#the-psychology-of-motivation) suggests that motivation is enhanced by proximity to a goal. Let's combine this with the cost of effort.
+Now, we can model the agent's motivation at any point in time. [The Psychology of Goal-Setting](#the-psychology-of-goal-setting) suggests that motivation is enhanced by proximity to a goal. Let's combine this with the cost of effort.
 
 At any point $x$, the agent is aware of the set of reference points $\mathcal R=\{0\}\cup M\cup\{1\}$ which includes the start, the end, and any milestones $M=\{m_1,\dots, m_n\}$. Let $d(x) = \min_{r\in\mathcal R} \lvert x-r\rvert$ be the distance to the nearest reference point.
 
@@ -149,7 +151,7 @@ Suppose that if your motivation drops below a certain level, you'll abandon the 
 
 Suppose we insert a single milestone $m$. The farthest point from any reference in the two resulting segments is now $\max\\{\frac{m}{2},\frac{1-m}{2}\\}$. Because motivation drops with distance, the **longest gap between consecutive milestones** sets a ceiling on how low motivation can sink. So keeping the motivation floor high means shrinking the longest gap between consecutive milestones—well, almost.
 
-The motivation over an interval $I_k \equiv [m_{k},.m_{k+1}]$ also depends crucially on how hard each bit of progress is: an additional percentage point of progress at 80% completion may require a lot more effort than the first 1%. For "nice enough" cost curves $c(x)$ (e.g. continuous, monotone), the hit to motivation on $I_k$ is bounded below by a term that grows with
+The motivation over an interval $I_k \equiv [m_{k},m_{k+1}]$ also depends crucially on how hard each bit of progress is: an additional percentage point of progress at 80% completion may require a lot more effort than the first 1%. For "nice enough" cost curves $c(x)$ (e.g. continuous, monotone), the hit to motivation on $I_k$ is bounded below by a term that grows with
 
 $$
 \Delta E_k \equiv \int_{m_{k}}^{m_{k+1}}c(s)\,ds.

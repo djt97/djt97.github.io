@@ -8,7 +8,7 @@ tags: [economics, ethics, lying, algorithms, communication games]
 categories: [economics]
 toc:
   - name: Introduction
-  - name: Models
+  - name: The Models
   - name: Why the models are the same, and different
   - name: Where does this leave us?
   - name: Why we should care.

@@ -6,4 +6,4 @@ inline: true # true if you just want inline
 related_posts: false
 ---
 
-🚨 **_New Paper_** : [Controlling Complex Contagions](/projects/controlling_complex_contagions) with <a href='https://www.alastairlangtry.com/'>Alastair Langtry</a> out now!
+**_New Paper_** : [Controlling Complex Contagions](/projects/controlling_complex_contagions) with <a href='https://www.alastairlangtry.com/'>Alastair Langtry</a> out now!

@@ -1,0 +1,187 @@
+---
+layout: default
+---
+{% assign variant = page.home_variant | default: 'a' %}
+{% assign home = page.home %}
+
+<div class="home-redesign home-redesign-{{ variant }}">
+  {% if variant == 'b' %}
+    <section class="home-poster">
+      <div class="home-poster-copy">
+        <p class="home-kicker">Economist · Cognitive Economics · Network Theory</p>
+        <h1>How people reason. How groups coordinate.</h1>
+        <p>I study the economics of thinking: the formal structure of human reasoning, and the social structure of collective action.</p>
+        <div class="home-action-bar" aria-label="Homepage links">
+          <a href="{{ '/start/' | relative_url }}">Start here</a>
+          <a href="{{ '/projects/' | relative_url }}">Research</a>
+          <a href="{{ '/blog/' | relative_url }}">Essays</a>
+          <a href="{{ '/tools/' | relative_url }}">Tools</a>
+        </div>
+      </div>
+      <div class="home-poster-image" aria-hidden="true">
+        {% include figure.liquid loading="eager" path="assets/img/dj.png" class="home-portrait-img" sizes="(min-width: 992px) 30vw, 85vw" alt="DJ Thornton" cache_bust=true %}
+      </div>
+    </section>
+
+    <section class="home-work-strip" aria-label="Selected work">
+      {% include home_selected_work.liquid %}
+    </section>
+
+    <section class="home-track-band">
+      <p class="home-kicker">Current Work</p>
+      <div class="home-track-grid home-track-grid-three">
+        <article>
+          <span>01</span>
+          <h2>Cognition</h2>
+          <p>Formal models of the human reasoning process, disciplined by experiments.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Networks</h2>
+          <p>Collective action, contagion, influence, and the social structure of coordination.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Research Tools</h2>
+          <p>Memory, AI, and practical systems for researchers who want to think better.</p>
+        </article>
+      </div>
+    </section>
+  {% elsif variant == 'd' %}
+    <section class="home-two-track-hero">
+      <p class="home-kicker">The Economics of Thinking</p>
+      <h1>How people reason. How groups coordinate.</h1>
+      <p>
+        My research is focused on cognition, where I work on modeling the human reasoning process, and networks, where I study collective action,
+        contagion, and influence.
+      </p>
+      <div class="home-action-bar" aria-label="Homepage links">
+        <a href="{{ '/start/' | relative_url }}">Start here</a>
+        <a href="{{ '/projects/' | relative_url }}">Research</a>
+        <a href="{{ '/blog/' | relative_url }}">Essays</a>
+        <a href="{{ '/tools/' | relative_url }}">Tools</a>
+      </div>
+    </section>
+
+    <section class="home-track-band home-track-band-immediate">
+      <div class="home-track-grid">
+        <article>
+          <h2>Cognition</h2>
+          <p>
+            How can economists model the human reasoning process? I build formal models of cognitive constraints in economic decision-making, with
+            experiments used to discipline and test the theory.
+          </p>
+        </article>
+        <article>
+          <h2>Networks</h2>
+          <p>
+            How does interaction shape collective action? I study contagion, influence, and network design: when social structure helps groups
+            coordinate, and when it traps them in bad equilibria.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-work-strip" aria-label="Selected work">
+      {% include home_selected_work.liquid %}
+    </section>
+  {% else %}
+    <section class="home-hero-split">
+      <div class="home-hero-copy">
+        <p class="home-kicker">{{ home.kicker | default: 'Economist · Cognitive Economics · Network Theory' }}</p>
+        <h1>{{ home.headline | default: 'How people reason. How groups coordinate.' }}</h1>
+        <p class="home-lede">
+          {{
+            home.lede
+            | default: 'I study how people reason and how groups coordinate. My research is focused on <strong>cognition</strong>, where I work on modeling the human reasoning process, and <strong>networks</strong>, where I study collective action, contagion, and influence.'
+          }}
+        </p>
+        <div class="home-action-bar" aria-label="Homepage links">
+          {% if home.actions %}
+            {% for action in home.actions %}
+              <a href="{{ action.url | relative_url }}">{{ action.label }}</a>
+            {% endfor %}
+          {% else %}
+            <a href="{{ '/start/' | relative_url }}">Start here</a>
+            <a href="{{ '/projects/' | relative_url }}">Research</a>
+            <a href="{{ '/blog/' | relative_url }}">Essays</a>
+            <a href="{{ '/tools/' | relative_url }}">Tools</a>
+          {% endif %}
+        </div>
+      </div>
+
+      <aside class="home-side-rail" aria-label="Selected work">
+        <div class="home-portrait-card">
+          {% include figure.liquid loading="eager" path="assets/img/dj.png" class="home-portrait-img" sizes="(min-width: 992px) 27vw, 85vw" alt="DJ Thornton" cache_bust=true %}
+          <p>{{ home.profile_caption | default: 'Postdoctoral Fellow, Manos Institute for Cognitive Economics / UNSW Sydney' }}</p>
+        </div>
+        {% include home_selected_work.liquid compact=true %}
+      </aside>
+    </section>
+
+    <section class="home-track-band">
+      <p class="home-kicker">{{ home.agenda_kicker | default: 'Research Agenda' }}</p>
+      <div class="home-track-grid">
+        {% assign agenda_items = home.agenda | default: home.tracks %}
+        {% if agenda_items %}
+          {% for item in agenda_items %}
+            <article>
+              {% if item.label %}
+                <span>{{ item.label }}</span>
+              {% endif %}
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.text }}</p>
+            </article>
+          {% endfor %}
+        {% else %}
+          <article>
+            <h2>Cognition</h2>
+            <p>
+              How can we model the human reasoning process? I develop formal models of cognitive constraints in economic decision-making, with
+              experiments used to discipline and test the theory.
+            </p>
+          </article>
+          <article>
+            <h2>Networks</h2>
+            <p>
+              How does interaction shape collective action? I study contagion, influence, and network design: when social structure helps groups
+              coordinate, and when it traps them in bad equilibria.
+            </p>
+          </article>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="home-questions-band">
+      <div>
+        <p class="home-kicker">{{ home.questions_kicker | default: 'Open Questions' }}</p>
+        <h2>{{ home.questions_headline | default: 'Essays on cognition, economics, tools, and how people think.' }}</h2>
+        <p>
+          {{
+            home.questions_text
+            | default: 'I write occasional essays on AI, research practice, memory, and the tools that change how intellectual work gets done.'
+          }}
+        </p>
+      </div>
+      {% if site.newsletter.enabled %}
+        <div class="home-newsletter">
+          {% include scripts/newsletter.liquid left=true %}
+        </div>
+      {% endif %}
+    </section>
+
+    {% if page.news and site.announcements.enabled %}
+      <section class="home-news-band">
+        <h2><a href="{{ '/news/' | relative_url }}">News</a></h2>
+        {% include news.liquid limit=true %}
+      </section>
+    {% endif %}
+
+    {% if page.social %}
+      <section class="home-social-band">
+        <div class="contact-icons">{% include social.liquid %}</div>
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </section>
+    {% endif %}
+  {% endif %}
+</div>

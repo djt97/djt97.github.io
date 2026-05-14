@@ -4,7 +4,7 @@ title: Talk to Your Flashcards with Claude Code
 date: 2026-03-01 09:00:00+1100
 description: An Anki skill for Claude Code that lets you search, triage, and rewrite your cards from the terminal.
 giscus_comments: true
-tags: [tools, anki, ai, spaced-repetition]
+tags: [tools, anki, AI, spaced-repetition]
 categories: [tools]
 toc:
   - name: Introduction
@@ -21,8 +21,6 @@ published: false
 If you've read my [earlier post](/blog/2025/memorize-first-understand-later/) on memory practice, you know I take flashcards seriously. I use Anki daily, and over the past year my collection has grown to several thousand cards. That's mostly a good thing — but it also means maintenance becomes a real task. Suspended cards pile up. Leeches accumulate. Poorly-worded questions linger until you finally get annoyed enough to fix them.
 
 I've been using [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — Anthropic's CLI for Claude — as my primary coding tool for a few months now. One of its lesser-known features is **skills**: reusable instruction files that teach Claude how to do specific things. I wrote a skill that connects Claude to my local Anki collection via the [AnkiConnect](https://ankiweb.net/shared/info/2055492159) add-on, and it has become one of the most useful things in my workflow.
-
-<!-- TODO: embed demo video here -->
 
 ---
 
@@ -443,7 +441,7 @@ Apply the user's decisions. Confirm before any deletions.
 ## Tips
 
 - **HTML in fields:** Card content often contains HTML (`<br>`, `<b>`, `<img>`). Strip it for display, but preserve it when editing unless the user asks to reformat.
-- **Cloze numbering:** `{{c1::...}}` and `{{c2::...}}` create separate cards from the same note. Don't accidentally merge or renumber them.
+- **Cloze numbering:** {% raw %}`{{c1::...}}` and `{{c2::...}}`{% endraw %} create separate cards from the same note. Don't accidentally merge or renumber them.
 - **Sync reminder:** After making changes, suggest the user sync (`Cmd+Shift+Y` on Mac, or Tools > Sync) if they use AnkiWeb.
 - **Large collections:** For collections with thousands of cards, always use targeted queries rather than fetching everything. Use `head_limit` style pagination in your Python (e.g., `cards[:50]`).
 - **Leech detection:** Cards with `tag:leech` or `prop:lapses>=8` are struggling. These are the highest-value triage targets — a rewrite can save a card from deletion.
