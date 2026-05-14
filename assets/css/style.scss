@@ -715,8 +715,32 @@ html[data-theme="dark"] .personal-page {
 }
 
 @media (max-width: 768px) {
+  .navbar-collapse .nav-more-item .nav-more-toggle {
+    display: none;
+  }
+
+  .navbar-collapse .nav-more-item .dropdown-menu {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    display: block;
+    float: none;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+  }
+
   .nav-more-item .dropdown-item {
+    color: var(--global-text-color);
+    padding: 0.5rem 0.55rem;
     text-align: right;
+  }
+
+  .nav-more-item .dropdown-item:hover {
+    background: transparent;
+    color: var(--global-hover-color);
   }
 
   .personal-hero,
@@ -807,11 +831,24 @@ html[data-theme="dark"] .home-redesign-a .home-hero-split {
 
 .home-kicker {
   color: var(--home-rust);
-  font-size: clamp(0.58rem, 1.9vw, 0.78rem);
+  font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: clamp(0.07em, 0.4vw, 0.16em) !important;
+  letter-spacing: 0.16em !important;
   margin: 0 0 1.25rem;
   text-transform: uppercase;
+}
+
+.home-kicker .kicker-break {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .home-kicker .kicker-sep {
+    display: none;
+  }
+  .home-kicker .kicker-break {
+    display: inline;
+  }
 }
 
 .home-hero-split,
