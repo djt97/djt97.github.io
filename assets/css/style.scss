@@ -715,32 +715,8 @@ html[data-theme="dark"] .personal-page {
 }
 
 @media (max-width: 768px) {
-  .navbar-collapse .nav-more-item .nav-more-toggle {
-    display: none;
-  }
-
-  .navbar-collapse .nav-more-item .dropdown-menu {
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    display: block;
-    float: none;
-    margin: 0;
-    min-width: 0;
-    padding: 0;
-    position: static;
-    width: 100%;
-  }
-
   .nav-more-item .dropdown-item {
-    color: var(--global-text-color);
-    padding: 0.5rem 0.55rem;
     text-align: right;
-  }
-
-  .nav-more-item .dropdown-item:hover {
-    background: transparent;
-    color: var(--global-hover-color);
   }
 
   .personal-hero,
@@ -767,6 +743,38 @@ html[data-theme="dark"] .personal-page {
 
   .personal-chips {
     grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar.navbar-light .navbar-nav .nav-item .nav-more-toggle {
+    display: none;
+  }
+
+  .navbar-collapse .nav-more-item .dropdown-menu {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    display: block;
+    float: none;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+  }
+
+  .navbar-collapse .nav-more-item .dropdown-item {
+    background: transparent;
+    color: var(--global-text-color);
+    padding: 0.5rem 0.55rem;
+    text-align: right;
+  }
+
+  .navbar-collapse .nav-more-item .dropdown-item:hover,
+  .navbar-collapse .nav-more-item .dropdown-item:focus {
+    background: transparent;
+    color: var(--global-hover-color);
   }
 }
 
