@@ -6,7 +6,8 @@ subtitle: Economist · cognitive economics · network theory
 home_variant: a
 
 home:
-  kicker: Economist · Cognitive Economics · Network Theory
+  kicker: >
+    Economist<span class="kicker-sep"> · </span><br class="kicker-break">Cognitive Economics · Network Theory
   headline: How people reason.<br>How groups coordinate.
   lede: >
     I study how people reason and how groups coordinate. My research is focused on
