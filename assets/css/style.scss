@@ -748,33 +748,50 @@ html[data-theme="dark"] .personal-page {
 
 @media (max-width: 575.98px) {
   .navbar.navbar-light .navbar-nav .nav-item .nav-more-toggle {
-    display: none;
+    display: none !important;
+  }
+
+  .navbar-collapse .navbar-nav {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .navbar-collapse .nav-more-item.dropdown {
+    position: static !important;
   }
 
   .navbar-collapse .nav-more-item .dropdown-menu {
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    display: block;
-    float: none;
-    margin: 0;
-    min-width: 0;
-    padding: 0;
-    position: static;
-    width: 100%;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: block !important;
+    float: none !important;
+    inset: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    z-index: auto !important;
   }
 
   .navbar-collapse .nav-more-item .dropdown-item {
-    background: transparent;
-    color: var(--global-text-color);
+    background: transparent !important;
+    color: var(--global-text-color) !important;
     padding: 0.5rem 0.55rem;
     text-align: right;
+    white-space: normal;
   }
 
   .navbar-collapse .nav-more-item .dropdown-item:hover,
   .navbar-collapse .nav-more-item .dropdown-item:focus {
-    background: transparent;
-    color: var(--global-hover-color);
+    background: transparent !important;
+    color: var(--global-hover-color) !important;
   }
 }
 
