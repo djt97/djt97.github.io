@@ -55,8 +55,7 @@ images:
       <p class="personal-kicker">Bloom Paediatric Studio</p>
       <h2>A clinic my wife and I run in Sydney.</h2>
       <p>
-        Bloom is a paediatric occupational therapy clinic for children and families. It is very much my wife's world professionally, but it is a big
-        part of our family life too.
+        Bloom is a paediatric occupational therapy clinic for children and families. Supported Children Bloom.
       </p>
     </div>
     <a class="personal-link" href="https://www.bloom-ps.com.au/" target="_blank" rel="noopener">
