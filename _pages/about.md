@@ -36,7 +36,7 @@ home:
       url: /assets/pdf/Strategic_Diffusion_Dec_2025.pdf
     - title: Targeted Persuasion
       status: "R&R, AEJ: Microeconomics"
-      url: /assets/pdf/Targeted_Persuasion_2025.pdf
+      url: /assets/pdf/Targeted_Persuasion_2026.pdf
     - title: Controlling Complex Contagions
       status: Working paper
       url: /assets/pdf/Controlling_Complex_Contagions_May_2026.pdf
