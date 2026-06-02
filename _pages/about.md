@@ -39,7 +39,7 @@ home:
       url: /assets/pdf/Targeted_Persuasion_2026.pdf
     - title: Controlling Complex Contagions
       status: Working paper
-      url: /assets/pdf/Controlling_Complex_Contagions_May_2026.pdf
+      url: /assets/pdf/Controlling_Complex_Contagions_June_2026.pdf
     - title: Ghostwriter for Anki
       status: Research tool
       url: /ghostwriter-for-anki/
