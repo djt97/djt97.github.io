@@ -37,22 +37,19 @@ So it’s safe to say Anki is a part of my life now. We’ll stay together until
 
 Unfortunately over the years I have created many terrible cards. Like, really terrible. Here’s a sample:
 
-```
-Front: What was agriculture's share of U.S. GDP in 1900 versus today?
-Back: 1900: 15%, Today: <1%
-```
+> Front: What was agriculture's share of U.S. GDP in 1900 versus today?
+>
+> Back: 1900: 15%, Today: <1%
 
-```
-Front: When is total boundedness equivalent to precompactness?
-Back: In a complete metric space.
-```
+> Front: When is total boundedness equivalent to precompactness?
+>
+> Back: In a complete metric space.
 
 Or, my personal favourite:
 
-```
-Front: What does Hulten's Theorem say intuitively?
-Back: If we want to look at shocks to output we can instead look at the effects on production.
-```
+> Front: What does Hulten's Theorem say intuitively?
+>
+> Back: If we want to look at shocks to output we can instead look at the effects on production.
 
 The first card has me cold-recalling two statistics, and one of them isn’t even precise: “<1%”.
 
@@ -64,13 +61,15 @@ The final card is particularly insidious because on the surface it looks like a 
 
 Anyway, when you’re writing cards regularly, you’re bound to write the occasional dud, and you won’t realize it’s a dud until you start reviewing! Your review data is the best indicator of your cards that need rewriting.
 
-But rewriting cards is such a pain! Anki’s interface for editing cards in bulk is terrible.<d-footnote>All due respect to the amazing people who maintain Anki and keep it open source — it’s just not built for bulk-editing cards.</d-footnote> Moreover, Anki doesn’t surface the metrics one would want for working out which cards are the “real” leeches. I say “real” because Anki has its own definition of what a leech is. By default, a leech is a card that you have forgotten the answer to 8 or more times. This is a decent metric, but it won’t surface cards as being bad until you’ve already wasted a considerable amount of time trying to remember them. It also misses some things.
+But rewriting cards is such a pain! Anki’s interface for editing cards in bulk is terrible.<d-footnote>All due respect to the amazing people who maintain Anki and keep it open source — it’s just not built for bulk-editing cards.</d-footnote>
 
-For example, a card you’ve seen 10 times and failed 5 won’t show up as a leech (50% retention), while a card that you’ve seen 80 times and failed 8 (90% retention) will. The card with 50% is an obvious candidate for rewriting. I use a custom metric to score troubling cards. This metric combines four things: (1) how often you fail a card, (2) how far its ease has dropped, (3) how long you labour over it each time it appears, and (4) whether it’s a card you ought to have learned but keep forgetting. For those interested, I've included the exact metric at the end of this post.
+Most people are familiar with the “leech” tag that Anki adds to cards you’ve failed 8 or more times. But Anki actually computes far more useful metrics than that. For example, if you open the card browser, right click on a column and enable the “difficulty” column, you can sort cards by how difficult FSRS thinks they are for you. When FSRS chooses how long to wait before it surfaces a card again, it combines this difficulty with a retrievability and stability metric for the card.
+
+I use the interval to rank cards by a simple cost: how often a card fails you, divided by how long Anki plans to wait before surfacing it again. The worst cards are not just the ones you keep getting wrong, they’re the ones you keep seeing over and over again. For those interested, I've included the exact metric at the end of this post.
 
 ## A skill to clean up your flashcards
 
-Fortunately, while Claude Code / ChatGPT’s Codex are not particularly gifted at *writing* cards, they are great at analyzing cards, and they have a much nicer UI than Anki! They also offer the added convenience of being able to help you fill in the blanks on cards that you’re forgetting because you don’t have enough information (i.e. you need to write supporting cards for details you’re sketchy on).
+Fortunately, while Claude Code / ChatGPT’s Codex are not particularly gifted at *writing* cards (see the “[memory machines](https://memory-machines.com/report)” report by [Ozzie Kirkby](https://kirkbyo.com/) and [Andy Matuschak](https://andymatuschak.org/)),<d-footnote>The skill uses the framework outlined in this report to "score" cards. Even good LLMs do not categorize the cards perfectly, but the framework is useful.</d-footnote> they are great at analyzing cards, and they have a much nicer UI than Anki!
 
 <p style="text-align: center;">
   <img src="/assets/img/clean-up-your-flashcards.gif" alt="The Jordan Peterson 'clean up your room' meme, edited so 'room' is crossed out and 'flashcards' is scrawled above it." style="max-width: 480px; width: 100%; height: auto; border-radius: 8px;">
@@ -82,14 +81,18 @@ I’ve been using Claude Code to talk to my flashcards for a while. In an email 
 
 I stand by it.
 
-So I put together a skill to make it easier for YOU to talk to your flashcards with an LLM. The most important thing about the skill is that it keeps you in control of your cards: you decide what gets rewritten, what gets split up, what gets filled out, and what gets deleted. The LLM is under strict instructions not to do anything to your flashcards without explicit approval! Here’s how it works:
+I’m not the first person to point an LLM at Anki---there are a few skills out there already, and even a full [Anki MCP server](https://www.ankimcp.com/). But almost all of them are built around *generating* cards, which is the one thing [LLMs are reliably bad at](https://memory-machines.com/). I wanted a skill for *fixing* the cards that you (or your review data) already know are bad.
+
+So I put together a skill<d-footnote>Although this post was written entirely by me, the skill itself wasn't---it was written by Claude Opus 4.8 + ChatGPT Pro with my prompting. I've tested it and am confident that it can be used for its intended purpose, but as with any AI-written tool you should expect the occasional mistake.</d-footnote> to make it easier for YOU to talk to your flashcards with an LLM. The most important thing about the skill is that it keeps you in control of your cards: you decide what gets rewritten, what gets split up, what gets filled out, and what gets deleted. The LLM is under strict instructions not to do anything to your flashcards without explicit approval! Here’s how it works:
 
 1. Install it by opening Claude Code (or Codex) and typing: *“Install this skill: https://github.com/djt97/anki-skill”*.
 2. Open Anki and make sure you have [AnkiConnect](https://ankiweb.net/shared/info/2055492159) installed.
 3. Open a new chat window and type `/anki` (in Claude Code) or `$anki` (in Codex).
 4. The LLM will run a “health check” on your flashcards.
-    a. As part of this, it will identify what conventions you use (I add “pink flags” to cards I see that I want to edit).
-    b. It will also ask you about your preferences for fixing cards that you’re struggling to remember.
+   <ol type="a">
+     <li>As part of this, it will identify what conventions you use (I add “pink flags” to cards I see that I want to edit).</li>
+     <li>It will also ask you about your preferences for fixing cards that you’re struggling to remember.</li>
+   </ol>
 5. Then you work collaboratively to fix those pesky cards that have been causing you problems!
 
 Below is a short video of me using the skill for the first time in Claude Code.
@@ -100,18 +103,11 @@ Below is a short video of me using the skill for the first time in Claude Code.
 
 ## The metric
 
-For those interested, the formula for the trouble metric is:
+For those interested, the cost of a card is:<d-footnote>I was concerned that lapse rate and 1/interval would be collinear because “the cards you fail” are going to be exactly “the cards you see most often”. It turns out they capture different things: across my own collection their correlation is only about 0.1, because a card’s interval is driven mostly by how long it's been in your collection for, whereas its lapse rate is how often you’ve failed it over its whole history.</d-footnote>
 
-$$
-\text{trouble} = 0.35\,(\text{lapse rate}) + 0.25\,(\text{ease drop}) + 0.20\,(\text{relative time}) + 0.20\,(\text{mature failure})
-$$
+$$\text{cost} = \frac{\text{lapse rate}}{\text{interval}}\qquad\text{where lapse rate}=\frac{\text{lapses}}{\text{reviews}}$$
 
-where:
-
-- *lapse rate* = fails ÷ reviews;
-- *ease drop* = how far the card’s ease has fallen below default;<d-footnote>“Ease” is only available if your scheduling algorithm is SM-2, which was the default algorithm in Anki before FSRS. If you’ve switched to FSRS (as most people now have), your cards don’t really have an ease factor, so the other three terms are all that matter.</d-footnote>
-- *relative time* = your average time on it vs a typical card;
-- *mature failure* = 1 if the card has a long interval yet you still fail it, else 0.
+I had initially played with more sophisticated metrics combining different statistics that Anki records, until I realized that the interval given by the FSRS algorithm already bakes in how hard it thinks a card is for you (and this is optimized for your own review data).<d-footnote>Anki’s FSRS scheduler estimates each card’s difficulty, stability, and retrievability, and you can sort by them in the card Browser (though I maintain that editing them in Anki is a pain). AnkiConnect unfortunately doesn’t expose those numbers, so the skill uses what it can get: lapses, reviews, and the interval set by FSRS.</d-footnote> Of course, if you manually flag the cards you think are troubling (as I do), the exact details of the metric are less relevant to you. Moreover, there may even be cards you tend to get right, but feel you don’t understand. The FSRS parameters are not going to pick up on those cards, even though you want to edit them, hence why I manually flag.
 
 I hope someone finds this useful!
 
