@@ -63,7 +63,7 @@ Anyway, when you’re writing cards regularly, you’re bound to write the occas
 
 But rewriting cards is such a pain! Anki’s interface for editing cards in bulk is terrible.<d-footnote>All due respect to the amazing people who maintain Anki and keep it open source — it’s just not built for bulk-editing cards.</d-footnote>
 
-Most people are familiar with the “leech” tag that Anki adds to cards you’ve failed 8 or more times. But Anki actually computes far more useful metrics than that. For example, if you open the card browser, right click on a column and enable the “difficulty” column, you can sort cards by how difficult FSRS thinks they are for you. When FSRS chooses how long to wait before it surfaces a card again, it combines this difficulty with a retrievability and stability metric for the card.
+Most people are familiar with the “leech” tag that Anki adds to cards you’ve failed 8 or more times. But Anki actually computes far more useful metrics than that. For example, if you open the card browser, right click on a column and enable the “retrievability” column, you can sort cards by how likely you are to recall them. When FSRS chooses how long to wait before it surfaces a card again, it combines retrievability with a difficulty and stability metric for the card.
 
 I use the interval to rank cards by a simple cost: how often a card fails you, divided by how long Anki plans to wait before surfacing it again. The worst cards are not just the ones you keep getting wrong, they’re the ones you keep seeing over and over again. For those interested, I've included the exact metric at the end of this post.
 
