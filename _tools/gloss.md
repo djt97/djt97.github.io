@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Gloss"
-description: "[TODO: one-line description — visible on the /tools/ grid card]"
+description: "Annotate papers, drafts, and LLM outputs in a focused reader, then export your notes as a contextualized block of text for an LLM."
 img: assets/img/gloss/hero.png
 importance: 2
 category: "Reading & Memory"
-hidden: true
-published: false
+hidden: false
+published: true
 redirect: /gloss/
-github: https://github.com/djt97/gloss
+github: https://github.com/djt97/Gloss
 ---

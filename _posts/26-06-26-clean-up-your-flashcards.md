@@ -35,27 +35,34 @@ So it’s safe to say Anki is a part of my life now. We’ll stay together until
 
 ## My terrible cards
 
-Unfortunately over the years I have created many terrible cards. Like, really terrible. Here’s a sample:
+Unfortunately, over the years I’ve made some truly terrible cards. Here are three of my worst—each bad for a different reason.
 
-> Front: What was agriculture's share of U.S. GDP in 1900 versus today?
+**Terrible Card #1:**
+> Front: Searle equated computer programs to what linguistic component?
 >
-> Back: 1900: 15%, Today: <1%
+> Back: Syntax.
 
-> Front: When is total boundedness equivalent to precompactness?
+“Linguistic component”. What was I thinking? What does that even mean? A component of language. Grammar? Morphology?... the cue is not even close to pinning down the answer. One fix would be something like “Searle argues that a program has ___, but no semantics.”
+
+**Terrible Card #2:**
+> Front: A function $f$ is measurable on the completion $\mathcal{F}^\mu$ of a $\sigma$-algebra $\mathcal{F}$ if and only if… (and sketch the proof).
 >
-> Back: In a complete metric space.
+> Back: …it is a.e. equal to an $\mathcal{F}$-measurable function $g$. Proof: the completion contains every set whose symmetric difference with an $\mathcal{F}$-set is negligible; prove the claim for indicators, then simple functions, then pass to the limit with monotone convergence. Done.
 
-Or, my personal favourite:
+For some unknown reason I thought that (a) I could memorize an entire proof on the back of a flashcard and (b) that this was a useful thing to do. I was in a dark place. This flashcard either needs the useful techniques extracted from it, or it should be deleted altogether.
 
-> Front: What does Hulten's Theorem say intuitively?
+And finally, my favourite:
+
+<p style="text-align: center;">
+  <img src="/assets/img/shrek-farquaad.gif" alt="Lord Farquaad from Shrek saying 'pick number 3, my lord'." style="max-width: 480px; width: 100%; height: auto; border-radius: 8px;">
+</p>
+
+**Terrible Card #3:**
+> Front: Define strong artificial intelligence in one phrase.
 >
-> Back: If we want to look at shocks to output we can instead look at the effects on production.
+> Back: Machines can duplicate human cognition.
 
-The first card has me cold-recalling two statistics, and one of them isn’t even precise: “<1%”.
-
-The second has a vague cue. “When” is far too broad—a better question would be “Total boundedness is equivalent to precompactness in […] metric spaces.” Or even, “In what kind of metric spaces is total boundedness equivalent to precompactness?” Or perhaps even: “Suppose *(M, d)* is totally bounded. What condition guarantees that *M* is precompact?” (I like this one!).
-
-The final card is particularly insidious because on the surface it looks like a perfectly reasonable question and answer. Unfortunately, there is no one answer to “what X says intuitively”. The fix is to either divide this into several more specific cards, or if it was important for me to remember the back exactly as written, to convert the card to something like: “(Hulten’s Theorem) If we want to look at shocks to output, we can instead…”
+_Two_ bad [Searle](https://en.wikipedia.org/wiki/John_Searle)-adjacent cards!?.. maybe I was sick that day. This one is particularly insidious because on the surface it seems like a perfectly reasonable card. But there is no “one phrase” for defining strong artificial intelligence, so it’s virtually impossible to grade the answer to this card. Moreover, it doesn’t actually capture the useful thing I cared about when writing it, which was the difference between strong and weak AI. A card like “What is the difference between strong and weak AI?” would already be a marginal improvement, and even then we should pull out exactly what the key difference is and cue *that*. This card is difficult to repair.
 
 ## Finding your bad cards
 
