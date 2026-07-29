@@ -9,16 +9,18 @@ images:
 ---
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/01-copilot.png" class="img-fluid rounded z-depth-1" caption="AI Copilot — ghost-text suggestions while you type" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/02-triage.png" class="img-fluid rounded z-depth-1" caption="Triage — review AI-generated cards before they hit your deck" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/03-side-panel.png" class="img-fluid rounded z-depth-1" caption="Side panel — draft cards alongside what you're reading" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/04-options.png" class="img-fluid rounded z-depth-1" caption="Options — choose your AI provider, keys stay local" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/05-graph.png" class="img-fluid rounded z-depth-1" caption="Knowledge graph — explore your collection visually" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/01-highlight-to-card.png" class="img-fluid rounded z-depth-1" caption="Highlight → card — the source travels with everything you write" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/02-copilot-autocomplete.png" class="img-fluid rounded z-depth-1" caption="Copilot autocomplete — ghost-text suggestions while you type; Tab to accept" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/03-copilot-model-visible.png" class="img-fluid rounded z-depth-1" caption="Transparent routing — the badge always shows which model wrote the suggestion" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/04-side-panel.png" class="img-fluid rounded z-depth-1" caption="Side panel — draft cards alongside what you're reading" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ghostwriter/05-your-ai-your-keys.png" class="img-fluid rounded z-depth-1" caption="100 included model requests — or bring your own provider" %}</swiper-slide>
 </swiper-container>
 
 ---
 
-**Ghostwriter for Anki** is a Chrome extension that helps you quickly create Anki flashcards from the things you read online. It pairs a keyboard-driven card editor with an AI Copilot, a triage workflow for reviewing cards before they're sent, and one-click export to Anki via AnkiConnect.
+**Ghostwriter for Anki** is a Chrome extension that helps you write Anki flashcards from the things you read online. The extension is built around a keyboard-driven workflow and an AI copilot that autocompletes the card _you're_ writing. It doesn't generate cards for you (because LLMs are bad at this!), it just helps you write cards faster.
+
+Version 2 strips out some of the bloated features from v1 and focuses on making the app as good as it can be for the purpose that it was built: highlight → write → send to Anki, with automatic tagging, context, and source links on every card. I've included 100 free model requests per browser (I'm not trying to make money from this, hence no paid plan — after the free requests you can bring your own API key or run a local model).
 
 <div class="d-flex flex-wrap gap-2 my-3">
   <a href="https://chromewebstore.google.com/detail/ghostwriter-for-anki/aldemiobejkammdkfgpfnmeppnegfaoc" class="btn btn-primary btn-sm z-depth-0">
@@ -34,39 +36,38 @@ images:
 
 ## Features
 
-- **AI Copilot** — ghost-text suggestions you accept with Tab
-- **Smart generation** — highlight text on any page and generate cards from it
-- **Triage queue** — review AI-generated cards (Accept / Reject / Next) before anything touches your deck
-- **Outbox + undo** — accepted cards sit in an outbox; edit or undo the last batch
-- **Markdown/MathJax** — write card content in markdown with live preview, including LaTeX math rendering
-- **Bulk generation** — use [FlashcardGPT](https://chatgpt.com/g/g-690faa9681448191b2700ca01abdeca6-flashcardgpt) or [Gemini Gem](https://gemini.google.com/gem/1E1OquFI0cH_ohhvADJQ61qKYdjJ55Jcq) to generate in bulk, then import with `J`
-- **Multiple AI providers** — bring your own key (Google Gemini, OpenAI, or UltimateAI). Keys stay local.
-- **Knowledge graph** — explore your collection visually
+- **Copilot autocomplete** — "ghost-text" suggestions you can accept with the Tab key. You begin the card and the AI helps you write it faster. The copilot has built-in safeguards to prevent suggestions that aren't grounded in the source material.
+- **Source-grounded cards** — highlight text on any website and the exact highlight, URL, and context (from page metadata) get sent to Anki with the card, so future-you knows where it came from.
+- **Auto-tagging** — cards are tagged automatically based on the highlighted material and page metadata (yay!).
+- **100 included model requests** — no account needed, no paid plans. After that, you can bring your own key (Gemini, OpenAI, OpenRouter, Claude, UltimateAI), run a local model (Ollama / LM Studio), or use Chrome's free on-device AI.
+- **Markdown/MathJax** — write cards using markdown format and preview them on the spot, including LaTeX math rendering. Special care taken to ensure math cards get sent to Anki in the right format!
 
 ## Demo
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:1.5rem;">
-  <iframe src="https://www.youtube.com/embed/ucI45rKTztI"
+  <iframe src="https://www.youtube.com/embed/nlLI6qsPC80"
           style="position:absolute;top:0;left:0;width:100%;height:100%;"
           frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## How it works
 
-1. Open Ghostwriter with your chosen shortcut — as an overlay, side panel, or standalone tab.
-2. Draft cards manually or generate from selected text on any page.
-3. Review in **Triage** mode — accept, reject, or edit.
-4. Send from your **Outbox** to Anki via AnkiConnect.
+1. Highlight a passage of text.
+2. Open Ghostwriter with your chosen shortcut as an overlay, side panel, or standalone tab. I use the overlay -- default shortcut is ⌥⇧F, I rebind to ⌘⇧F.
+3. Start typing the card, use ⌘⇧X to autocomplete with the Copilot.
+4. Tab to accept. Any other key to reject.
+5. Add to Anki with ⌘⇧A (make sure Anki is open!)
+
+Everything after this point is AI-generated.
 
 <details>
 <summary><strong>Setup</strong></summary>
 <div markdown="1">
 
 1. [Install from the Chrome Web Store](https://chromewebstore.google.com/detail/ghostwriter-for-anki/aldemiobejkammdkfgpfnmeppnegfaoc).
-2. Open the extension **Options** and choose an AI provider (or leave AI features off for manual-only use).
-3. Paste your API key — it's stored locally in your browser, never sent anywhere except your chosen provider.
-4. Choose a shortcut for opening the extension: go to `chrome://extensions/` → **Keyboard shortcuts** and set a key for "Open Ghostwriter for Anki Overlay".
-5. Make sure Anki is open with AnkiConnect installed, then click "Refresh decks/types" inside Ghostwriter.
+2. That's it for AI: 100 model requests are included per browser. To keep going after that, open **Options** and add your own API key (stored locally, sent only to your chosen provider), point it at a local model, or enable Chrome's on-device AI. Manual-only use needs no AI at all.
+3. Choose a shortcut for opening the extension: go to `chrome://extensions/` → **Keyboard shortcuts** and set a key for "Open Ghostwriter for Anki Overlay".
+4. Make sure Anki is open with AnkiConnect installed, then click "Refresh decks/types" inside Ghostwriter.
 
 </div>
 </details>
@@ -86,8 +87,8 @@ images:
 <div markdown="1">
 
 - No account required.
-- You control the AI provider and API key.
-- When you use AI features, only the text needed to generate suggestions is sent to your chosen provider.
+- You control the model: your own key, a local model, Chrome's on-device AI, or the included hosted allowance — a visible badge always shows which one wrote a suggestion.
+- When you use AI features, only the text needed for the suggestion is sent to the model you chose. The included hosted tier stores usage counters, never raw IP addresses.
 - See the [full privacy policy](https://github.com/djt97/ghostwriter-for-anki/blob/main/PRIVACY_POLICY.md).
 
 </div>

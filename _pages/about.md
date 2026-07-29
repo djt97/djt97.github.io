@@ -33,7 +33,7 @@ home:
       url: /assets/pdf/Bad_Networks_JPubE.pdf
     - title: Strategic Influence
       status: R&R, Econometrica (2nd round)
-      url: /assets/pdf/Strategic_Diffusion_Dec_2025.pdf
+      url: /assets/pdf/Strategic_Influence_July_2026.pdf
     - title: Targeted Persuasion
       status: "R&R, AEJ: Microeconomics"
       url: /assets/pdf/Targeted_Persuasion_2026.pdf
