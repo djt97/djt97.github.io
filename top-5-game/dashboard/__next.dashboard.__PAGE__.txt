@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[69306,["/top-5-game/_next/static/chunks/0jku5ad3_9qbw.js","/top-5-game/_next/static/chunks/0wkvhuch~pe2n.js","/top-5-game/_next/static/chunks/0n4z.7yu76je-.js","/top-5-game/_next/static/chunks/0doqdacwj2f_z.js","/top-5-game/_next/static/chunks/0eax3.0h_k5y5.js"],"DashboardClient"]
+3:I[97367,["/top-5-game/_next/static/chunks/0jku5ad3_9qbw.js","/top-5-game/_next/static/chunks/0wkvhuch~pe2n.js","/top-5-game/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/top-5-game/_next/static/chunks/0doqdacwj2f_z.js","async":true}],["$","script","script-1",{"src":"/top-5-game/_next/static/chunks/0eax3.0h_k5y5.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"aLP7lhm6oPnXPnGsd4ieI"}
+5:null
