@@ -335,7 +335,16 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt", "assets/js/search/*.js"]
+  # top-5-game/ is a prebuilt Next.js export whose CSS and JS are already minified.
+  # Running them through this minifier a second time corrupts them: it rewrote
+  # "line-gap-override:0.0%" to "line-gap-override:0", which is invalid for that
+  # descriptor, and broke the game's layout in production while dev builds looked fine
+  # (this plugin only runs when JEKYLL_ENV=production).
+  exclude:
+    - "robots.txt"
+    - "assets/js/search/*.js"
+    - "top-5-game/*"
+    - "top-5-game/**/*"
   uglifier_args:
     harmony: true
 
