@@ -90,6 +90,14 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Stop GitHub Pages re-running Jekyll 🚫
+        # _site is already built. Without this marker, Pages runs Jekyll again over the
+        # deployed branch and drops every path starting with an underscore — which
+        # silently deletes top-5-game/_next and the __next*.txt router payloads, leaving
+        # the game unstyled and its client-side navigation broken. The include: list in
+        # _config.yml only protects the first build; the second pass never sees it.
+        run: touch _site/.nojekyll
+
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4

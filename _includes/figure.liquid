@@ -1,4 +1,9 @@
-{% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
+{% comment %}
+  The uppercase variants matter: _config.yml lists ".JPG"/".JPEG" in imagemagick
+  input_formats, so those sources do get resized to "NAME-480.webp". Stripping only the
+  lowercase extensions here left the srcset asking for "NAME.JPG-480.webp", which 404s.
+{% endcomment %}
+{% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' | remove: '.JPG' | remove: '.JPEG' %}
 
 <figure
   {% if include.slot %}
