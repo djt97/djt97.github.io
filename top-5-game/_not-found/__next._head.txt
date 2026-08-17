@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/top-5-game/_next/static/chunks/0jku5ad3_9qbw.js","/top-5-game/_next/static/chunks/0wkvhuch~pe2n.js","/top-5-game/_next/static/chunks/0n4z.7yu76je-.js"],"ViewportBoundary"]
+3:I[97367,["/top-5-game/_next/static/chunks/0jku5ad3_9qbw.js","/top-5-game/_next/static/chunks/0wkvhuch~pe2n.js","/top-5-game/_next/static/chunks/0n4z.7yu76je-.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Top 5 Game"}],["$","meta","1",{"name":"description","content":"Two blinded economics abstracts. One was published in a Top 5 journal. Can you tell which?"}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"aLP7lhm6oPnXPnGsd4ieI"}

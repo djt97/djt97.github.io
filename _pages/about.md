@@ -20,7 +20,7 @@ home:
       url: /start/
     - label: Research
       url: /projects/
-    - label: Essays
+    - label: Writing
       url: /blog/
     - label: Tools
       url: /tools/
@@ -53,8 +53,8 @@ home:
         How does interaction shape collective action? I study contagion, influence, and network design: when social structure helps groups
         coordinate, and when it traps them in bad equilibria.
   questions_kicker: Open Questions
-  questions_headline: Essays on economics, AI, and tools&nbsp;for&nbsp;thought.
-  questions_text: I write occasional essays on economics, research practice, AI, memory, and the tools&nbsp;for&nbsp;thought.
+  questions_headline: Writing on economics, AI, and tools&nbsp;for&nbsp;thought.
+  questions_text: Subscribe for my non-academic writing.
 
 profile:
   align: right

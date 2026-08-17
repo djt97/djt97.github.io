@@ -14,7 +14,7 @@ layout: default
         <div class="home-action-bar" aria-label="Homepage links">
           <a href="{{ '/start/' | relative_url }}">Start here</a>
           <a href="{{ '/projects/' | relative_url }}">Research</a>
-          <a href="{{ '/blog/' | relative_url }}">Essays</a>
+          <a href="{{ '/blog/' | relative_url }}">Writing</a>
           <a href="{{ '/tools/' | relative_url }}">Tools</a>
         </div>
       </div>
@@ -58,7 +58,7 @@ layout: default
       <div class="home-action-bar" aria-label="Homepage links">
         <a href="{{ '/start/' | relative_url }}">Start here</a>
         <a href="{{ '/projects/' | relative_url }}">Research</a>
-        <a href="{{ '/blog/' | relative_url }}">Essays</a>
+        <a href="{{ '/blog/' | relative_url }}">Writing</a>
         <a href="{{ '/tools/' | relative_url }}">Tools</a>
       </div>
     </section>
@@ -104,7 +104,7 @@ layout: default
           {% else %}
             <a href="{{ '/start/' | relative_url }}">Start here</a>
             <a href="{{ '/projects/' | relative_url }}">Research</a>
-            <a href="{{ '/blog/' | relative_url }}">Essays</a>
+            <a href="{{ '/blog/' | relative_url }}">Writing</a>
             <a href="{{ '/tools/' | relative_url }}">Tools</a>
           {% endif %}
         </div>
@@ -155,11 +155,11 @@ layout: default
     <section class="home-questions-band">
       <div>
         <p class="home-kicker">{{ home.questions_kicker | default: 'Open Questions' }}</p>
-        <h2>{{ home.questions_headline | default: 'Essays on cognition, economics, tools, and how people think.' }}</h2>
+        <h2>{{ home.questions_headline | default: 'Writing on cognition, economics, tools, and how people think.' }}</h2>
         <p>
           {{
             home.questions_text
-            | default: 'I write occasional essays on AI, research practice, memory, and the tools that change how intellectual work gets done.'
+            | default: 'I write occasionally on AI, research practice, memory, and the tools that change how intellectual work gets done.'
           }}
         </p>
       </div>

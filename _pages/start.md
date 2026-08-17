@@ -44,7 +44,7 @@ body_class: start-layout
     <a class="start-route start-route-touch" href="{% if site.newsletter.enabled %}#start-newsletter{% else %}{{ '/blog/' | relative_url }}{% endif %}">
       <span class="start-route-icon"><i class="fa-solid fa-envelope-open-text"></i></span>
       <span class="start-route-label">Stay in touch</span>
-      <strong>Essays every few weeks</strong>
+      <strong>New writing and tools</strong>
       <p>On economics, AI, and tools&nbsp;for&nbsp;thought.</p>
       <span class="start-route-action">Subscribe <i class="fa-solid fa-arrow-right"></i></span>
     </a>
@@ -54,8 +54,8 @@ body_class: start-layout
   <section class="start-collab">
     <div>
       <p class="start-kicker">Open Questions</p>
-      <h2>Subscribe to Open Questions.</h2>
-      <p class="start-collab-copy">Essays on economics, AI, and tools&nbsp;for&nbsp;thought — every few weeks.</p>
+      <h2>Subscribe</h2>
+      <p class="start-collab-copy">Writing and tools on economics, AI, and thinking well — sent when there's something worth sending.</p>
     </div>
 
     {% if site.newsletter.enabled %}
@@ -70,7 +70,7 @@ body_class: start-layout
 
   <nav class="start-browse-strip" aria-label="Browse the full site">
     <a href="{{ '/projects/' | relative_url }}">research</a>
-    <a href="{{ '/blog/' | relative_url }}">blog</a>
+    <a href="{{ '/blog/' | relative_url }}">writing</a>
     <a href="{{ '/tools/' | relative_url }}">tools</a>
     <a href="{{ '/cv/' | relative_url }}">cv</a>
     <a href="{{ '/personal/' | relative_url }}">personal</a>

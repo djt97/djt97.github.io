@@ -169,7 +169,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Open Questions # blog_name will be displayed in your blog page
-blog_description: Essays on economics, AI, and tools&nbsp;for&nbsp;thought. # aaa
+blog_description: Writing on economics, AI, and tools&nbsp;for&nbsp;thought. # aaa
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -261,7 +261,21 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+# Everything after "_pages" exists for top-5-game/, which is a prebuilt Next.js export
+# copied in whole. Next names a lot of its output with a leading underscore, and Jekyll
+# drops those by default — 44 of the 91 files, including every __next.*.txt payload the
+# client router fetches when moving between pages. The site still worked without them,
+# but each in-app navigation fired failed requests and fell back to a full page load.
+# Listed individually rather than as "_*", which would publish _includes, _layouts,
+# _sass and friends.
+include:
+  - "_pages"
+  - "_next"
+  - "_not-found"
+  - "__next*"
+  - "_buildManifest.js"
+  - "_ssgManifest.js"
+  - "_clientMiddlewareManifest.js"
 exclude:
   - bin/
   - CONTRIBUTING.md

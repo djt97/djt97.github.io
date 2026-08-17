@@ -690,6 +690,7 @@ html[data-theme="dark"] .personal-page {
     font-size: clamp(1.75rem, 3.4vw, 3rem);
     line-height: 1.04;
     margin: 0;
+    text-wrap: balance;
   }
 }
 
@@ -1114,10 +1115,11 @@ html[data-theme="dark"] .home-redesign-a .home-hero-split {
   }
 
   h2 {
-    font-size: clamp(2rem, 4vw, 3.8rem);
+    font-size: clamp(2rem, 4vw, 3.4rem);
     line-height: 1.05;
     margin: 0 0 1rem;
     max-width: 720px;
+    text-wrap: balance;
   }
 
   p:not(.home-kicker) {

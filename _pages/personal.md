@@ -37,6 +37,10 @@ images:
       <a class="personal-chip" href="https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW" target="_blank" rel="noopener">The 1975</a>
       <a class="personal-chip" href="https://open.spotify.com/artist/0nnYdIpahs41QiZ9MWp5Wx" target="_blank" rel="noopener">Holly Humberstone</a>
       <a class="personal-chip" href="https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7" target="_blank" rel="noopener">Charlie Puth</a>
+      <a class="personal-chip" href="https://open.spotify.com/artist/5rwUYLyUq8gBsVaOUcUxpE" target="_blank" rel="noopener">Lawrence</a>
+      <a class="personal-chip" href="https://open.spotify.com/artist/2QYdqWGgRorVkA8cJMMdrn" target="_blank" rel="noopener">Tiny Habits</a>
+      <a class="personal-chip" href="https://open.spotify.com/artist/4jXfFzeP66Zy67HM2mvIIF" target="_blank" rel="noopener">Bill Evans</a>
+      <a class="personal-chip" href="https://open.spotify.com/artist/7MOxmVjcx5HWoEu9pBWXT3" target="_blank" rel="noopener">Alan Gogoll</a>
     </div>
   </section>
 

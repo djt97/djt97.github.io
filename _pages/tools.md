@@ -5,7 +5,7 @@ permalink: /tools/
 description: Software for researchers, learners, and anyone who reads more than they remember.
 nav: true
 nav_order: 4
-display_categories: [Reading & Memory, For Researchers]
+display_categories: [Reading & Memory, For Researchers, Other]
 horizontal: false
 ---
 
