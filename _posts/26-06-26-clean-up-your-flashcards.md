@@ -38,13 +38,15 @@ So it’s safe to say Anki is a part of my life now. We’ll stay together until
 Unfortunately, over the years I’ve made some truly terrible cards. Here are three of my worst—each bad for a different reason.
 
 **Terrible Card #1:**
+
 > Front: Searle equated computer programs to what linguistic component?
 >
 > Back: Syntax.
 
-“Linguistic component”. What was I thinking? What does that even mean? A component of language. Grammar? Morphology?... the cue is not even close to pinning down the answer. One fix would be something like “Searle argues that a program has ___, but no semantics.”
+“Linguistic component”. What was I thinking? What does that even mean? A component of language. Grammar? Morphology?... the cue is not even close to pinning down the answer. One fix would be something like “Searle argues that a program has \_\_\_, but no semantics.”
 
 **Terrible Card #2:**
+
 > Front: A function $f$ is measurable on the completion $\mathcal{F}^\mu$ of a $\sigma$-algebra $\mathcal{F}$ if and only if… (and sketch the proof).
 >
 > Back: …it is a.e. equal to an $\mathcal{F}$-measurable function $g$. Proof: the completion contains every set whose symmetric difference with an $\mathcal{F}$-set is negligible; prove the claim for indicators, then simple functions, then pass to the limit with monotone convergence. Done.
@@ -58,11 +60,12 @@ And finally, my favourite:
 </p>
 
 **Terrible Card #3:**
+
 > Front: Define strong artificial intelligence in one phrase.
 >
 > Back: Machines can duplicate human cognition.
 
-_Two_ bad [Searle](https://en.wikipedia.org/wiki/John_Searle)-adjacent cards!?.. maybe I was sick that day. This one is particularly insidious because on the surface it seems like a perfectly reasonable card. But there is no “one phrase” for defining strong artificial intelligence, so it’s virtually impossible to grade the answer to this card. Moreover, it doesn’t actually capture the useful thing I cared about when writing it, which was the difference between strong and weak AI. A card like “What is the difference between strong and weak AI?” would already be a marginal improvement, and even then we should pull out exactly what the key difference is and cue *that*. This card is difficult to repair.
+_Two_ bad [Searle](https://en.wikipedia.org/wiki/John_Searle)-adjacent cards!?.. maybe I was sick that day. This one is particularly insidious because on the surface it seems like a perfectly reasonable card. But there is no “one phrase” for defining strong artificial intelligence, so it’s virtually impossible to grade the answer to this card. Moreover, it doesn’t actually capture the useful thing I cared about when writing it, which was the difference between strong and weak AI. A card like “What is the difference between strong and weak AI?” would already be a marginal improvement, and even then we should pull out exactly what the key difference is and cue _that_. This card is difficult to repair.
 
 ## Finding your bad cards
 
@@ -76,7 +79,7 @@ I use the interval to rank cards by a simple cost: how often a card fails you, d
 
 ## A skill to clean up your flashcards
 
-Fortunately, while Claude Code / ChatGPT’s Codex are not particularly gifted at *writing* cards (see the “[memory machines](https://memory-machines.com/report)” report by [Ozzie Kirkby](https://kirkbyo.com/) and [Andy Matuschak](https://andymatuschak.org/)),<d-footnote>The skill uses the framework outlined in this report to "score" cards. Even good LLMs do not categorize the cards perfectly, but the framework is useful.</d-footnote> they are great at analyzing cards, and they have a much nicer UI than Anki!
+Fortunately, while Claude Code / ChatGPT’s Codex are not particularly gifted at _writing_ cards (see the “[memory machines](https://memory-machines.com/report)” report by [Ozzie Kirkby](https://kirkbyo.com/) and [Andy Matuschak](https://andymatuschak.org/)),<d-footnote>The skill uses the framework outlined in this report to "score" cards. Even good LLMs do not categorize the cards perfectly, but the framework is useful.</d-footnote> they are great at analyzing cards, and they have a much nicer UI than Anki!
 
 <p style="text-align: center;">
   <img src="/assets/img/clean-up-your-flashcards.gif" alt="The Jordan Peterson 'clean up your room' meme, edited so 'room' is crossed out and 'flashcards' is scrawled above it." style="max-width: 480px; width: 100%; height: auto; border-radius: 8px;">
@@ -88,11 +91,11 @@ I’ve been using Claude Code to talk to my flashcards for a while. In an email 
 
 I stand by it.
 
-I’m not the first person to point an LLM at Anki---there are a few skills out there already, and even a full [Anki MCP server](https://www.ankimcp.com/). But almost all of them are built around *generating* cards, which is the one thing [LLMs are reliably bad at](https://memory-machines.com/). I wanted a skill for *fixing* the cards that you (or your review data) already know are bad.
+I’m not the first person to point an LLM at Anki---there are a few skills out there already, and even a full [Anki MCP server](https://www.ankimcp.com/). But almost all of them are built around _generating_ cards, which is the one thing [LLMs are reliably bad at](https://memory-machines.com/). I wanted a skill for _fixing_ the cards that you (or your review data) already know are bad.
 
 So I put together a skill<d-footnote>Although this post was written entirely by me, the skill itself wasn't---it was written by Claude Opus 4.8 + ChatGPT Pro with my prompting. I've tested it and am confident that it can be used for its intended purpose, but as with any AI-written tool you should expect the occasional mistake.</d-footnote> to make it easier for YOU to talk to your flashcards with an LLM. The most important thing about the skill is that it keeps you in control of your cards: you decide what gets rewritten, what gets split up, what gets filled out, and what gets deleted. The LLM is under strict instructions not to do anything to your flashcards without explicit approval! Here’s how it works:
 
-1. Install it by opening Claude Code (or Codex) and typing: *“Install this skill: https://github.com/djt97/anki-skill”*.
+1. Install it by opening Claude Code (or Codex) and typing: _“Install this skill: [https://github.com/djt97/anki-skill](https://github.com/djt97/anki-skill)”_.
 2. Open Anki and make sure you have [AnkiConnect](https://ankiweb.net/shared/info/2055492159) installed.
 3. Open a new chat window and type `/anki` (in Claude Code) or `$anki` (in Codex).
 4. The LLM will run a “health check” on your flashcards.

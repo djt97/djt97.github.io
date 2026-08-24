@@ -19,7 +19,7 @@ images:
 
 **Gloss** is a desktop reader for annotating documents — lecture materials, research papers, LLM outputs, etc. — and exporting your highlights and notes as a single structured packet you can hand to an LLM.
 
-When you want ChatGPT / Claude to revise or explain *several specific parts* of the output, the UI only allows you to directly reply to one selected piece of text at a time. More generally, if you're using Claude Code / Codex or similar, you have to type out all your questions / requests in the chat box, rather than being able to annotate the model's output directly.
+When you want ChatGPT / Claude to revise or explain _several specific parts_ of the output, the UI only allows you to directly reply to one selected piece of text at a time. More generally, if you're using Claude Code / Codex or similar, you have to type out all your questions / requests in the chat box, rather than being able to annotate the model's output directly.
 
 Gloss is built to fix this: open a markdown, LaTeX, or PDF file, highlight the passages you care about, attach a note (or dictate one by voice), and export everything---your highlights, their surrounding context, and your questions---as one block of markdown text. Paste it into Claude Code, Codex, or your favourite LLM, and the model will respond to each item in order. If you use Claude Code / Codex, you can easily get it to update the relevant document in-place to address your annotations.
 
