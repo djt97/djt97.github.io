@@ -31,12 +31,12 @@ home:
     - title: Bad Networks
       status: Journal of Public Economics, 2026
       url: /assets/pdf/Bad_Networks_JPubE.pdf
+    - title: Targeted Persuasion
+      status: "American Economic Journal: Microeconomics (conditionally accepted)"
+      url: /assets/pdf/Targeted_Persuasion_2026.pdf
     - title: Strategic Influence
       status: R&R, Econometrica (2nd round)
       url: /assets/pdf/Strategic_Influence_July_2026.pdf
-    - title: Targeted Persuasion
-      status: "R&R, AEJ: Microeconomics"
-      url: /assets/pdf/Targeted_Persuasion_2026.pdf
     - title: Controlling Complex Contagions
       status: Working paper
       url: /assets/pdf/Controlling_Complex_Contagions_June_2026.pdf
