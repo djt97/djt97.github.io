@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 [Targeted Persuasion](/projects/targeted_persuasion/), with Gabriele Gratton and Chris Teh, has been conditionally accepted at the _American Economic Journal: Microeconomics_!
+🎉 [Targeted Persuasion](/projects/targeted_persuasion/), with [Gabriele Gratton](https://gratton.org/) and [Chris Teh](https://sites.google.com/view/christopherteh/), has been conditionally accepted at AEJ: Micro.
