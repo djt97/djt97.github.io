@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Controlling Complex Contagions"
-description: "How much interaction should a principal allow to limit a harmful contagion? With <a href='https://www.alastairlangtry.com/'>Alastair Langtry</a>.<br><br>"
-img: assets/img/office-contagion.png
+description: "Why do some governments take extreme measures to stop protests, while others don't? With <a href='https://www.alastairlangtry.com/'>Alastair Langtry</a>.<br><br>"
+img: assets/img/protest-and-internet.png
 importance: 3
 category: "Working Papers"
-pdf: /assets/pdf/Controlling_Complex_Contagions_June_2026.pdf
+pdf: /assets/pdf/Controlling_Complex_Contagions_Sep_2026.pdf
 abstract: >
-  Many social and economic behaviors, from participating in a protest to adopting a new technology, require reinforcement from multiple peers to be worthwhile. The spread of these behaviors is often called <em>complex contagion</em>. We develop a tractable model of complex contagion on random networks, where agents take an action only when enough peers do too. We identify a tipping point in behavior: a level of network connectivity where participation (the fraction taking the action) jumps discontinuously. We characterize how the location and size of this tipping point depend on heterogeneity in connectivity among agents. When a principal with coarse control over the network structure likes connectivity but dislikes participation, she is pushed into "extreme" choices. She either chooses no participation, or a level significantly above the tipping point: to accept any participation is to accept a lot. The principal is "in for a penny, in for a pound".
+  Governments often restrict communication to prevent people from coordinating protests and popular uprisings. But communication is also essential to economic activity, which creates a tradeoff for governments. We build a theoretical model to study this tradeoff. Our model shows: (i) how and why large protests occur suddenly, (ii) why regimes act to reduce the rate of interactions even when no protest is observed, and (iii) that homogeneity in the structure of interactions both exacerbates the size of protests and pushes the government to extreme interventions.
 ---
