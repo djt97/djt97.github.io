@@ -32,7 +32,7 @@ home:
       status: Journal of Public Economics, 2026
       url: /assets/pdf/Bad_Networks_JPubE.pdf
     - title: Targeted Persuasion
-      status: "American Economic Journal: Microeconomics (conditionally accepted)"
+      status: "American Economic Journal: Microeconomics (forthcoming)"
       url: /assets/pdf/Targeted_Persuasion_Aug_2026.pdf
     - title: Strategic Influence
       status: R&R, Econometrica (2nd round)
