@@ -52,9 +52,9 @@ home:
       text: >
         How does interaction shape collective action? I study contagion, influence, and network design: when social structure helps groups
         coordinate, and when it traps them in bad equilibria.
-  questions_kicker: Open Questions
-  questions_headline: Writing on economics, AI, and tools&nbsp;for&nbsp;thought.
-  questions_text: Subscribe for my non-academic writing.
+  questions_kicker: Contact
+  questions_headline: Get in touch.
+  questions_text: Email is the easiest way to reach me. I also post videos on YouTube and share tools I've built.
 
 profile:
   align: right

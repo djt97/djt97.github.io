@@ -144,7 +144,7 @@ whatsapp_number: # your WhatsApp number (full phone number in international form
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+youtube_id: DJThornton8 # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
@@ -212,7 +212,7 @@ external_sources: # none.
 # -----------------------------------------------------------------------------
 
 newsletter:
-  enabled: true
+  enabled: false
   endpoint: cmopgig9n1xo70i0g3iw2d02v
   # https://loops.so/docs/forms/custom-form
 

@@ -163,11 +163,7 @@ layout: default
           }}
         </p>
       </div>
-      {% if site.newsletter.enabled %}
-        <div class="home-newsletter">
-          {% include scripts/newsletter.liquid left=true %}
-        </div>
-      {% endif %}
+      {% include contact_links.liquid %}
     </section>
 
     {% if page.news and site.announcements.enabled %}

@@ -1,0 +1,21 @@
+<nav class="contact-links" aria-label="Get in touch">
+  {% if site.email %}
+    <a href="mailto:{{ site.email | encode_email }}">
+      <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+      <span>Email</span>
+      <i class="fa-solid fa-arrow-right contact-link-arrow" aria-hidden="true"></i>
+    </a>
+  {% endif %}
+  {% if site.youtube_id %}
+    <a href="https://www.youtube.com/@{{ site.youtube_id }}" rel="noopener">
+      <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+      <span>YouTube</span>
+      <i class="fa-solid fa-arrow-right contact-link-arrow" aria-hidden="true"></i>
+    </a>
+  {% endif %}
+  <a href="{{ '/tools/' | relative_url }}">
+    <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+    <span>Tools</span>
+    <i class="fa-solid fa-arrow-right contact-link-arrow" aria-hidden="true"></i>
+  </a>
+</nav>

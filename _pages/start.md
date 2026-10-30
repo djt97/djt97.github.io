@@ -12,7 +12,7 @@ body_class: start-layout
   <section class="start-intro">
     <p class="start-lede">
       I'm an economist at the <a href="https://www.cognitiveeconomics.com/" rel="noopener">Manos Institute for Cognitive Economics</a>, working on how people reason and how groups coordinate. Here's a paper, an
-      essay, a tool, and a way to stay in touch.
+      essay, a tool, and a way to get in touch.
     </p>
   </section>
 
@@ -41,30 +41,24 @@ body_class: start-layout
       <span class="start-route-action">Try it <i class="fa-solid fa-arrow-right"></i></span>
     </a>
 
-    <a class="start-route start-route-touch" href="{% if site.newsletter.enabled %}#start-newsletter{% else %}{{ '/blog/' | relative_url }}{% endif %}">
+    <a class="start-route start-route-touch" href="#get-in-touch">
       <span class="start-route-icon"><i class="fa-solid fa-envelope-open-text"></i></span>
-      <span class="start-route-label">Stay in touch</span>
-      <strong>New writing and tools</strong>
-      <p>On economics, AI, and tools&nbsp;for&nbsp;thought.</p>
-      <span class="start-route-action">Subscribe <i class="fa-solid fa-arrow-right"></i></span>
+      <span class="start-route-label">Get in touch</span>
+      <strong>Email, YouTube, and tools</strong>
+      <p>Questions about research, talks, or the tools I've built.</p>
+      <span class="start-route-action">Get in touch <i class="fa-solid fa-arrow-right"></i></span>
     </a>
 
   </section>
 
-  <section class="start-collab">
+  <section id="get-in-touch" class="start-collab">
     <div>
-      <p class="start-kicker">Open Questions</p>
-      <h2>Subscribe</h2>
-      <p class="start-collab-copy">Writing and tools on economics, AI, and thinking well — sent when there's something worth sending.</p>
+      <p class="start-kicker">Contact</p>
+      <h2>Get in touch.</h2>
+      <p class="start-collab-copy">Email is the easiest way to reach me. I also post videos on YouTube and share tools I've built.</p>
     </div>
 
-    {% if site.newsletter.enabled %}
-      <div id="start-newsletter" class="start-newsletter">
-        {% include scripts/newsletter.liquid left=true %}
-      </div>
-    {% else %}
-      <a class="start-rss-link" href="{{ '/feed.xml' | relative_url }}">Follow by RSS</a>
-    {% endif %}
+    {% include contact_links.liquid %}
 
   </section>
 

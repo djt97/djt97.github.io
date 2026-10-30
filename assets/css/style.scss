@@ -427,27 +427,6 @@ html[data-theme="dark"] .start-page {
   max-width: 42rem;
 }
 
-.start-newsletter {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 8px;
-  padding: 1rem;
-
-  .newsletter-form-container {
-    margin: 0;
-  }
-
-  .newsletter-form-input {
-    flex: 1 1 auto;
-    max-width: none;
-  }
-}
-
-.start-rss-link {
-  color: #fff;
-  font-weight: 750;
-}
-
 .start-browse-strip {
   display: flex;
   flex-wrap: wrap;
@@ -1131,19 +1110,51 @@ html[data-theme="dark"] .home-redesign-a .home-hero-split {
   }
 }
 
-.home-newsletter {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 7px;
-  padding: 1.2rem;
+/* Get in touch links (home band and start page) */
 
-  .newsletter-form-container {
-    margin: 0;
+.contact-links {
+  display: grid;
+  gap: 0.75rem;
+
+  a {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 7px;
+    color: #fff;
+    display: flex;
+    font-size: 1.05rem;
+    font-weight: 700;
+    gap: 0.85rem;
+    min-height: 3.4rem;
+    padding: 0.8rem 1.1rem;
+    text-decoration: none;
+    transition:
+      background 0.18s ease,
+      border-color 0.18s ease;
   }
 
-  .newsletter-form-input {
-    flex: 1 1 auto;
-    max-width: none;
+  a:hover,
+  a:focus-visible {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.34);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  i {
+    text-align: center;
+    width: 1.25rem;
+  }
+
+  span {
+    color: inherit;
+  }
+
+  .contact-link-arrow {
+    font-size: 0.82em;
+    margin-left: auto;
+    opacity: 0.7;
   }
 }
 
