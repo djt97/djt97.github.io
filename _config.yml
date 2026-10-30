@@ -345,6 +345,9 @@ jekyll-minifier:
     - "assets/js/search/*.js"
     - "top-5-game/*"
     - "top-5-game/**/*"
+  # Sass already compresses the CSS (sass.style above). The minifier's own CSS pass
+  # rewrites "0%" to "0", which turned hsla(0,0%,100%,.08) into invalid CSS in production.
+  compress_css: false
   uglifier_args:
     harmony: true
 
